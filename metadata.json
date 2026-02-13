@@ -1,0 +1,9 @@
+{
+  "name": "Bitácora de sueños",
+  "description": "Recinto digital para la custodia de la palabra soberana, memoria del ser e integración pedagógica (Marco de referencia: MEN Colombia).",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "ethicalGuidelines": "ETHICS.md",
+  "version": "1.0.0"
+}

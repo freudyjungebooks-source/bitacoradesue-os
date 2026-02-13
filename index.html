@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora de Sueños - Portal de la Palabra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'marfil-cosmico': '#F7F3EB',
+                        'verde-salvia': '#8FAE9E',
+                        'azul-noche': '#1E2A3A',
+                        'dorado-suave': '#D8C27A',
+                        'gris-piedra': '#6B6B6B',
+                        'rosa-ceniza': '#B08D8D'
+                    },
+                    fontFamily: {
+                        sans: ['Quicksand', 'sans-serif'],
+                        serif: ['Lora', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background-color: #F7F3EB;
+            color: #1E2A3A;
+            line-height: 1.6;
+            background-attachment: fixed;
+            background-image: 
+                url("https://www.transparenttextures.com/patterns/handmade-paper.png"),
+                radial-gradient(circle at 50% 50%, rgba(30, 42, 58, 0.02) 0%, transparent 70%);
+            cursor: default;
+        }
+        
+        /* Prohibición de mayúsculas sostenidas disruptivas */
+        * { text-transform: none !important; }
+        
+        /* Siglas y acrónimos autorizados por el MEN */
+        .sigla-autorizada { text-transform: uppercase !important; }
+
+        .stars-container {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: -2;
+            opacity: 0.05;
+        }
+        
+        .star {
+            position: absolute;
+            background: #D8C27A;
+            border-radius: 50%;
+        }
+
+        .nebula {
+            position: fixed;
+            top: -10%; left: -10%; width: 120%; height: 120%;
+            pointer-events: none;
+            z-index: -1;
+            background: radial-gradient(circle at 20% 30%, #D8C27A 0%, transparent 40%),
+                        radial-gradient(circle at 80% 70%, #8FAE9E 0%, transparent 40%);
+            filter: blur(120px);
+            opacity: 0.02;
+        }
+
+        .serif-font { font-family: 'Lora', serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        h1, h2, h3, h4 { 
+            font-weight: 600; 
+            letter-spacing: -0.01em; 
+            max-width: 100%;
+        }
+
+        /* Estabilidad tipográfica institucional */
+        .text-xl-limit { font-size: 1.25rem !important; line-height: 1.75rem !important; }
+        
+        p { opacity: 0.85; }
+        
+        .btn-ritual {
+            transition: all 0.4s ease;
+            border-radius: 0.75rem;
+        }
+        
+        /* Ajuste de tracking para evitar tensión visual */
+        .tracking-soberana { letter-spacing: 0.02em; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.34.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@testing-library/react": "https://esm.sh/@testing-library/react@^16.3.2",
+    "fs": "https://esm.sh/fs@^0.0.1-security",
+    "path": "https://esm.sh/path@^0.12.7"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div class="stars-container" id="stars"></div>
+    <div class="nebula"></div>
+    <div id="root"></div>
+    <script>
+        const container = document.getElementById('stars');
+        for (let i = 0; i < 20; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            const size = Math.random() * 1.2 + 0.5;
+            star.style.width = `${size}px`;
+            star.style.height = `${size}px`;
+            star.style.left = `${Math.random() * 100}%`;
+            star.style.top = `${Math.random() * 100}%`;
+            container.appendChild(star);
+        }
+    </script>
+    <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
