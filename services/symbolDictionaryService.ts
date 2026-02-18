@@ -1,4 +1,3 @@
-
 import { PersonalWord, ClassicalSymbolMeaning, AgeGroup, SymbolicCategory } from '../types';
 import { normalizeSpanishText, normalizeSystemText } from '../utils/linguisticNormalizer';
 
@@ -19,14 +18,22 @@ const STORAGE_KEY = 'bitacora_diccionario_v6_consolidated';
  * 3. PEDAGOGÍA ACTIVA: Se integran los ciclos vitales y competencias del lenguaje.
  */
 export const symbolDictionaryService = {
+
   async initializeIfEmpty(): Promise<void> {
     const current = this.getAllSymbols();
+
     if (current.length === 0) {
       try {
-        const response = await fetch('data/classicalSymbols.json');
-        if (!response.ok) throw new Error("No se pudo cargar la semilla clásica.");
+
+        // 🔹 CORRECCIÓN CLAVE: ruta absoluta desde /public
+        const response = await fetch('/data/classicalSymbols.json');
+
+        if (!response.ok) {
+          throw new Error("No se pudo cargar la semilla clásica.");
+        }
+
         const classics: any[] = await response.json();
-        
+
         const initialEntries: SymbolEntry[] = classics.map(s => ({
           id: `classic-${s.symbol.toLowerCase()}`,
           word: normalizeSystemText(s.symbol),
@@ -49,8 +56,8 @@ export const symbolDictionaryService = {
           definicionPersonal: "",
           definicionAcademica: s.mainDefinition,
           resonanciaEmocional: s.emotionalResonance,
-          usoPedagogico: s.pedagogicalCycles.primaria, // Default for mapping
-          pedagogicalUse: s.pedagogicalCycles.primaria,
+          usoPedagogico: s.pedagogicalCycles?.primaria ?? "",
+          pedagogicalUse: s.pedagogicalCycles?.primaria ?? "",
           languageCompetencies: s.languageCompetencies,
           reflexiveClosure: s.reflexiveClosure,
           pedagogicalCycles: s.pedagogicalCycles,
@@ -58,8 +65,9 @@ export const symbolDictionaryService = {
           createdAt: new Date().toISOString(),
           metaphors: []
         }));
-        
+
         this.saveSymbols(initialEntries);
+
       } catch (e) {
         console.error("Error en inicialización del Diccionario:", e);
       }
@@ -69,9 +77,12 @@ export const symbolDictionaryService = {
   getAllSymbols(): SymbolEntry[] {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (!saved) return [];
+
     try {
       return JSON.parse(saved);
-    } catch { return []; }
+    } catch {
+      return [];
+    }
   },
 
   saveSymbols(symbols: SymbolEntry[]): void {
@@ -79,31 +90,40 @@ export const symbolDictionaryService = {
   },
 
   async addPersonalSymbol(word: PersonalWord): Promise<void> {
+
     const symbols = this.getAllSymbols();
     const normalizedWord = normalizeSystemText(word.word);
-    const exists = symbols.find(s => s.word.toLowerCase() === normalizedWord.toLowerCase());
-    
+
+    const exists = symbols.find(
+      s => s.word.toLowerCase() === normalizedWord.toLowerCase()
+    );
+
     const newEntry: SymbolEntry = {
       ...word,
       word: normalizedWord,
       metaphors: [],
       isConfirmedByAuthor: true,
       isIntimate: word.isPrivate ?? true,
-      type: word.origin === 'personal' ? 'personal' : (word.origin === 'emergencia' ? 'emergente' : 'clásico')
+      type:
+        word.origin === 'personal'
+          ? 'personal'
+          : word.origin === 'emergencia'
+          ? 'emergente'
+          : 'clásico'
     };
 
     if (exists) {
-      symbols[symbols.indexOf(exists)] = { 
-        ...exists, 
-        userValidation: word.definicionPersonal || word.meaning, 
-        isConfirmedByAuthor: true, 
+      symbols[symbols.indexOf(exists)] = {
+        ...exists,
+        userValidation: word.definicionPersonal || word.meaning,
+        isConfirmedByAuthor: true,
         isIntimate: word.isPrivate,
-        type: 'personal' 
+        type: 'personal'
       };
     } else {
       symbols.unshift(newEntry);
     }
-    
+
     this.saveSymbols(symbols);
   }
 };
