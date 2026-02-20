@@ -1,0 +1,107 @@
+[
+  {
+    "symbol": "Agua",
+    "category": "Elemento",
+    "mainDefinition": "El agua representa el origen primordial de la vida, el flujo incesante de la conciencia y la capacidad de purificación. Es un símbolo de adaptabilidad que toma la forma del recipiente que lo contiene, evocando la naturaleza plástica del ser y sus emociones cambiantes.",
+    "emotionalResonance": "Moviliza sentimientos de calma, fluidez y renovación. Puede evocar la paz de un manantial o la intensidad de una tempestad interna que busca limpiar lo antiguo para dar paso a lo nuevo.",
+    "pedagogicalCycles": {
+      "preescolar": "Explorar el agua como fuente de vida y nido de los seres vivos.",
+      "primaria": "Narrar el ciclo del agua como metáfora del crecimiento personal y el cambio constante.",
+      "secundaria": "Analizar la fluidez narrativa y la transparencia en la expresión de la identidad propia.",
+      "media": "Reflexionar sobre la ética del cuidado del agua como sustento planetario y legado vital.",
+      "adultos": "Habitar la quietud del agua como espacio de meditación, memoria profunda y sentido."
+    },
+    "languageCompetencies": "Potencia la descripción sensorial, el uso de adjetivos de textura y la construcción de relatos de transición.",
+    "reflexiveClosure": "¿Qué corriente habita hoy en tu silencio?",
+    "guidingQuestions": [
+      "¿Hacia dónde fluye tu palabra hoy?",
+      "¿Es tu sentir un agua calma o en movimiento?",
+      "¿Qué se limpia en ti cuando escribes?"
+    ],
+    "isEmergent": false
+  },
+  {
+    "symbol": "Árbol",
+    "category": "Naturaleza",
+    "mainDefinition": "Símbolo de la vida en perpetua evolución y la conexión entre los planos de la existencia. Sus raíces profundas representan el vínculo con la tierra y los ancestros, mientras sus ramas ascendentes simbolizan el crecimiento del espíritu hacia la luz.",
+    "emotionalResonance": "Transmite seguridad, paciencia y pertenencia. Ayuda a reconocer que todo proceso humano requiere tiempo, raíces sólidas y la valentía de ramificarse hacia lo desconocido.",
+    "pedagogicalCycles": {
+      "preescolar": "El árbol como casa y protección para los amigos de la naturaleza.",
+      "primaria": "Dibujar y narrar el árbol genealógico de los sueños, afectos y memorias.",
+      "secundaria": "El carácter y la resiliencia: la fortaleza del tronco ante el viento del cambio.",
+      "media": "El legado y los frutos: ¿qué semilla de sentido estamos sembrando en nuestra comunidad?",
+      "adultos": "La sabiduría de las raíces: integrar la historia personal como sustento del ser."
+    },
+    "languageCompetencies": "Fomenta la estructura jerárquica del texto y la metáfora de crecimiento biográfico.",
+    "reflexiveClosure": "¿Cuáles son las raíces que sostienen tu palabra?",
+    "guidingQuestions": [
+      "¿A qué tierra pertenecen tus memorias?",
+      "¿Qué frutos está dando tu aprendizaje hoy?",
+      "¿Qué parte de ti busca tocar el cielo?"
+    ],
+    "isEmergent": false
+  },
+  {
+    "symbol": "Puente",
+    "category": "Transito",
+    "mainDefinition": "Representa el pasaje entre dos estados, realidades o personas. Es el símbolo del vínculo que vence la separación y permite el dialogo constructivo. Cruzar un puente es un acto de valentia que implica dejar una orilla conocida para habitar una nueva posibilidad.",
+    "emotionalResonance": "Moviliza la esperanza, la incertidumbre del cambio y la alegria del encuentro.",
+    "pedagogicalCycles": {
+      "preescolar": "Unir dos manos o dos colores como gesto de amistad.",
+      "primaria": "Narrar historias de viajes como transitos simbolicos.",
+      "secundaria": "Construir puentes de palabras para entender al otro.",
+      "media": "El transito a la vida adulta y el compromiso social.",
+      "adultos": "Reconciliar el pasado con el presente."
+    },
+    "languageCompetencies": "Fortalece el uso de conectores logicos y la argumentacion.",
+    "reflexiveClosure": "¿Que orilla estas dejando atras?",
+    "guidingQuestions": [
+      "¿Quien camina contigo?",
+      "¿Es tu puente solido?",
+      "¿Que descubres al llegar?"
+    ],
+    "isEmergent": false
+  },
+  {
+    "symbol": "Semilla",
+    "category": "Memoria",
+    "mainDefinition": "Simbolo de la potencia latente y el comienzo invisible. Representa la esperanza y el origen de las ideas.",
+    "emotionalResonance": "Invoca paciencia y fe en el proceso.",
+    "pedagogicalCycles": {
+      "preescolar": "Observar como germina una semilla.",
+      "primaria": "Escribir sobre mi talento semilla.",
+      "secundaria": "Reconocer sueños que empiezan a germinar.",
+      "media": "Proyectos de vida y siembra consciente.",
+      "adultos": "El legado que dejamos."
+    },
+    "languageCompetencies": "Desarrolla la narracion de procesos.",
+    "reflexiveClosure": "¿Que idea estas cuidando hoy?",
+    "guidingQuestions": [
+      "¿Que necesita tu semilla?",
+      "¿Aceptas el tiempo del crecimiento?",
+      "¿En que tierra siembras?"
+    ],
+    "isEmergent": false
+  },
+  {
+    "symbol": "Espejo",
+    "category": "Arquetipo",
+    "mainDefinition": "Simbolo del autoconocimiento y la conciencia clara.",
+    "emotionalResonance": "Puede provocar confrontacion o aceptacion.",
+    "pedagogicalCycles": {
+      "preescolar": "Imitar gestos frente al espejo.",
+      "primaria": "Autorretratos narrativos.",
+      "secundaria": "Busqueda de identidad.",
+      "media": "Juicio critico y etica.",
+      "adultos": "Reconciliarse con la propia imagen."
+    },
+    "languageCompetencies": "Estimula el uso del yo narrativo.",
+    "reflexiveClosure": "¿Te reconoces en tus palabras?",
+    "guidingQuestions": [
+      "¿Que parte de ti no se ve?",
+      "¿Es clara tu mirada?",
+      "¿Que le dirias a tu reflejo?"
+    ],
+    "isEmergent": false
+  }
+]
