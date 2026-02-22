@@ -1,0 +1,48 @@
+{
+  "evaluationPhilosophy": "Evaluación para la Vida: Valoramos el proceso de habitar la palabra y el símbolo, no el cumplimiento de una norma externa. La evaluación es cualitativa, formativa y respetuosa de la intimidad.",
+  "rubricsByCycle": [
+    {
+      "cycle": "Ciclo 1 (1° a 3°)",
+      "name": "Nivel Enraizamiento",
+      "indicators": [
+        "Capacidad de asombro ante la imagen soñada.",
+        "Reconocimiento de protectores y lugares seguros.",
+        "Asociación libre de colores y sonidos con el sentir.",
+        "Respeto por el silencio del compañero en el círculo."
+      ]
+    },
+    {
+      "cycle": "Ciclo 2 y 3 (4° a 7°)",
+      "name": "Nivel Crecimiento",
+      "indicators": [
+        "Uso de adjetivos y conectores para dar fluidez al relato.",
+        "Identificación de vínculos entre el sueño y la historia familiar.",
+        "Integración del movimiento corporal como forma de expresión.",
+        "Respeto por los límites de la intimidad propia y ajena."
+      ]
+    },
+    {
+      "cycle": "Ciclo 4 y 5 (8° a 11°)",
+      "name": "Nivel Floración",
+      "indicators": [
+        "Postura crítica y ética ante los propios símbolos y sombras.",
+        "Profundidad retórica en la expresión de proyectos de vida.",
+        "Capacidad de escucha sistémica y empatía planetaria.",
+        "Uso magistral de la metáfora para nombrar el propósito del Ser."
+      ]
+    }
+  ],
+  "emotionalIndicators": [
+    "Ejercicio autónomo del derecho al silencio.",
+    "Manifestación de calma y presencia durante la escritura.",
+    "Validación de la propia voz como fuente de verdad."
+  ],
+  "linguisticIndicators": [
+    "Ampliación del léxico simbólico personal.",
+    "Capacidad de narrar transiciones y nudos emocionales.",
+    "Uso estético de la palabra para honrar la experiencia."
+  ],
+  "teacherObservation": "El docente observa el clima del recinto, la disposición al ritual y la evolución de la seguridad narrativa del grupo. No califica contenidos íntimos.",
+  "studentSelfAssessment": "¿Siento que mi palabra es más clara hoy? ¿Qué símbolo me ayudó a comprenderme mejor esta semana?",
+  "ethicalSafeguards": "Prohibido el uso de notas numéricas para el mundo interior. El error en la escritura onírica no existe; solo existen nuevas capas de sentido."
+}

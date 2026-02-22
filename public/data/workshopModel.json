@@ -1,0 +1,116 @@
+[
+  {
+    "id": "workshop_animal_protector_v1",
+    "workshopTitle": "el animal que cuida mi Sueño",
+    "grade": "1° grado",
+    "ageRange": "6-7 años",
+    "duration": "60 minutos",
+    "centralSymbol": "el animal protector",
+    "humanObjectives": "reconocer la compañía y la protección en el mundo interior, fortaleciendo la seguridad básica y el asombro.",
+    "linguisticObjectives": "asociar sonidos con letras iniciales a partir de los nombres de seres protectores.",
+    "materials": ["caja de arena", "piedras", "hojas", "colores suaves"],
+    "activities": [
+      {
+        "step": "el nido de la voz",
+        "description": "se invita a cerrar los ojos y respirar como un animalito durmiendo. evocamos al ser que nos acompañó en la noche."
+      },
+      {
+        "step": "movimiento guardián",
+        "description": "movemos el cuerpo imitando el paso de nuestro animal protector por el aula, en absoluto silencio."
+      },
+      {
+        "step": "nombrar al guardián",
+        "description": "escribimos la primera letra del nombre del animal en la bitácora. cada trazo es un gesto de cuidado."
+      }
+    ],
+    "reflectionQuestions": [
+      "¿cómo se siente tu cuerpo cuando este animal te cuida?",
+      "¿qué color tiene el nido de tu Sueño hoy?"
+    ],
+    "dreamIntegration": "el taller ancla la seguridad emocional necesaria para la alfabetización inicial en la imagen del protector onírico.",
+    "dictionaryUse": "buscar el Símbolo del animal y registrar el sentimiento de protección.",
+    "academicIntegration": {
+      "gradeUnit": "unidad de fonética y reconocimiento de identidad",
+      "languageStandards": ["reconozco que las letras tienen un sonido y un sentido."],
+      "citizenshipCompetencies": ["identificación de personas que me cuidan."],
+      "learningOutcomes": ["identifica letras iniciales con intención afectiva."]
+    },
+    "qualitativeEvaluation": "se observa la armonía en el movimiento y el respeto por el nido del compañero."
+  },
+  {
+    "id": "workshop_viento_cambio_v1",
+    "workshopTitle": "el viento de mi nueva voz",
+    "grade": "6° grado",
+    "ageRange": "11-12 años",
+    "duration": "90 minutos",
+    "centralSymbol": "el viento",
+    "humanObjectives": "aceptar la metamorfosis de la identidad y el cuerpo con ligereza y fluidez creativa.",
+    "linguisticObjectives": "emplear figuras literarias como la metáfora para nombrar lo invisible y lo cambiante.",
+    "materials": ["telas ligeras", "música de aire", "bitácora de Sueños"],
+    "activities": [
+      {
+        "step": "cuerpos al viento",
+        "description": "movimiento fluido por el espacio, dejando que el cuerpo se mueva como una ráfaga que cambia de dirección."
+      },
+      {
+        "step": "llamado a lo invisible",
+        "description": "cerramos los ojos y escuchamos el sonido de nuestra respiración. ¿qué parte de nosotros se está transformando?"
+      },
+      {
+        "step": "escritura de la ráfaga",
+        "description": "escribimos un poema breve usando metáforas sobre nuestro propio cambio."
+      }
+    ],
+    "reflectionQuestions": [
+      "¿qué se está llevando el viento hoy en tu Vida?",
+      "¿hacia dónde sopla tu nueva Palabra?"
+    ],
+    "dreamIntegration": "el taller utiliza el viento como mediador de la transición adolescente.",
+    "dictionaryUse": "definir el viento como cambio y comunicación invisible.",
+    "academicIntegration": {
+      "gradeUnit": "unidad de lírica y figuras literarias",
+      "languageStandards": ["reconozco la función estética y simbólica del lenguaje."],
+      "citizenshipCompetencies": ["respeto por la diversidad de desarrollo físico."],
+      "learningOutcomes": ["crea metáforas para expresar estados de ánimo cambiantes."]
+    },
+    "qualitativeEvaluation": "capacidad de habitar la incertidumbre a través de la imagen poética."
+  },
+  {
+    "id": "workshop_hilo_destino_v1",
+    "workshopTitle": "el hilo de mi legado",
+    "grade": "11° grado",
+    "ageRange": "16-17 años",
+    "duration": "120 minutos",
+    "centralSymbol": "el hilo",
+    "humanObjectives": "asumir la responsabilidad del propio destino y el compromiso ético con la Tierra.",
+    "linguisticObjectives": "emplear la retórica existencial para redactar una tesis de Vida honesta.",
+    "materials": ["hilos de colores", "bitácora", "música ancestral de cuerdas"],
+    "activities": [
+      {
+        "step": "tejido colectivo",
+        "description": "en grupo, sostenemos hilos que se cruzan. cada movimiento de uno afecta la tensión de la red completa."
+      },
+      {
+        "step": "evocación del centro",
+        "description": "recordamos el Sueño más antiguo que guardamos. ¿qué hilo de nuestra historia familiar aparece ahí?"
+      },
+      {
+        "step": "la Palabra tejida",
+        "description": "escribimos un manifiesto sobre el compromiso que asumimos con nuestro futuro y con la Vida."
+      }
+    ],
+    "reflectionQuestions": [
+      "¿qué nudos quieres desatar en tu historia familiar?",
+      "¿de qué color es el hilo con el que tejes tu destino?"
+    ],
+    "dreamIntegration": "el hilo conecta el Sueño personal con el tejido social y planetario.",
+    "dictionaryUse": "registrar el hilo como conexión, destino y compromiso ético.",
+    "academicIntegration": {
+      "gradeUnit": "unidad de retórica y proyecto de Vida",
+      "languageStandards": ["asumo una postura crítica frente a mensajes globales."],
+      "citizenshipCompetencies": ["acción para la reparación simbólica y la paz."],
+      "learningOutcomes": ["expresa su proyecto vital con profundidad retórica y ética."]
+    },
+    "qualitativeEvaluation": "sentido de trascendencia y claridad en el propósito del Ser."
+  }
+]

@@ -1,1 +1,84 @@
 
+{
+  "identidad": {
+    "titulo": "El Cuaderno de los Sueños",
+    "subtitulo": "Herramienta pedagógica de escritura consciente",
+    "sintesis": "Proyecto de innovación curricular diseñado para fortalecer la competencia comunicativa y el desarrollo del ser. Propone un sistema de registro narrativo donde el estudiante procesa su experiencia vital mediante el símbolo y la reflexión sistémica, integrando su mundo interior con los estándares nacionales de lenguaje."
+  },
+  "objetivos": {
+    "general": "Potenciar la autonomía narrativa y el pensamiento crítico mediante el registro pedagógico de los sueños, vinculando la producción textual con la identidad y el currículo formal.",
+    "especificos": [
+      "Fomentar la escritura en primera persona como ejercicio de soberanía del ser.",
+      "Identificar y catalogar símbolos personales para ampliar el léxico y la comprensión lectora.",
+      "Articular el proceso onírico con los Estándares de Lenguaje y Derechos Básicos de Aprendizaje (DBA).",
+      "Establecer un sistema de cuidado ético que priorice la dignidad humana sobre la técnica digital."
+    ]
+  },
+  "fundamento": {
+    "pedagogico": "Se fundamenta en el constructivismo activo de Piaget (el aprendizaje como acción) y la cooperación interpretativa de Umberto Eco (el texto como obra abierta).",
+    "psicologico": "Integra la psicología profunda para el reconocimiento simbólico y la mirada sistémica para la comprensión de los vínculos y el linaje familiar.",
+    "curricular": "Alineado con las competencias del lenguaje del MEN, enfocándose en la producción textual con sentido y la ética de la comunicación."
+  },
+  "protocolo": [
+    {
+      "fase": "Apertura y silencio",
+      "duracion": "10 min",
+      "descripcion": "Disposición corporal y preparación del recinto de escucha interna."
+    },
+    {
+      "fase": "Escritura soberana",
+      "duracion": "20 min",
+      "descripcion": "Inscripción libre del relato en la bitácora sin interferencia externa."
+    },
+    {
+      "fase": "Activación de lupa simbólica",
+      "duracion": "15 min",
+      "descripcion": "Exploración asistida de imágenes recurrentes y ampliación del contexto cultural."
+    },
+    {
+      "fase": "Reflexión sistémica",
+      "duracion": "15 min",
+      "descripcion": "Vinculación del relato con la memoria familiar y el territorio."
+    },
+    {
+      "fase": "Integración y cierre",
+      "duracion": "20 min",
+      "descripcion": "Producción de evidencia formativa y validación curricular del proceso."
+    }
+  ],
+  "roles": {
+    "docente": {
+      "orienta": "Gestiona el clima de aula y el soporte técnico del portal.",
+      "contiene": "Garantiza un espacio de seguridad emocional y respeto mutuo.",
+      "limite": "No interpreta, no diagnostica y no califica el contenido íntimo."
+    },
+    "estudiante": {
+      "decide": "Ejerce el derecho al silencio y elige qué fragmentos compartir.",
+      "interpreta": "Es el único autor y dueño legítimo del sentido de su palabra.",
+      "integra": "Relaciona su vivencia con los conceptos académicos de la sesión."
+    },
+    "ia": {
+      "asiste": "Actúa como espejo simbólico y normalizador de la dignidad lingüística.",
+      "organiza": "Facilita la trazabilidad curricular para el seguimiento institucional.",
+      "limite": "Nunca actúa como autoridad diagnóstica o intérprete definitivo."
+    }
+  },
+  "etica": {
+    "declaracion": "La bitácora es un proyecto pedagógico de escritura, no una intervención clínica.",
+    "protocolo_riesgo": "Ante contenido de riesgo, se activa la ruta presencial de orientación escolar.",
+    "privacidad": "Los datos residen en la memoria local; el sistema custodia la palabra, no la vigila."
+  },
+  "evaluacion": {
+    "sistema": "Evaluación formativa cualitativa basada en la presencia y la producción textual.",
+    "evidencias": [
+      "Registro cronológico en bitácora digital.",
+      "Glosario de símbolos personales.",
+      "Fichas de autoevaluación consciente.",
+      "Participación en círculos de diálogo (voluntario)."
+    ]
+  },
+  "implementacion": {
+    "mvp": "Bitácora digital activa + una sesión semanal de 90 minutos.",
+    "proyeccion": "Integración con proyectos de paz, convivencia y justicia restaurativa."
+  }
+}
