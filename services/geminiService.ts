@@ -1,4 +1,3 @@
-
 import { AcompanamientoResponse, AgeGroup, WritingType, ClassicalSymbolMeaning, Workshop } from "../types";
 import { getLocalAccompaniment } from "./localAccompaniment";
 
@@ -6,14 +5,18 @@ import { getLocalAccompaniment } from "./localAccompaniment";
  * PORTAL DE ACOMPAÑAMIENTO SOBERANO
  * Orquestador que garantiza respuesta ética mediante fallback local inmediato.
  */
+
+const API_KEY = import.meta.env.VITE_API_KEY;
+
 export const accompanyDream = async (params: { 
   title: string, 
   content: string, 
   writingType: WritingType,
   ageGroup: AgeGroup 
 }): Promise<AcompanamientoResponse> => {
+
   // 1. Intento de acompañamiento remoto (IA)
-  if (navigator.onLine && process.env.API_KEY) {
+  if (navigator.onLine && API_KEY) {
     try {
       const { remoteAccompany } = await import("./remoteAccompaniment");
       const remoteResult = await remoteAccompany(params);
@@ -24,7 +27,6 @@ export const accompanyDream = async (params: {
   }
 
   // 2. Fortaleza Local (Core Comunitario)
-  // Este módulo es determinista, ético y funciona 100% offline.
   return getLocalAccompaniment(params);
 };
 
@@ -38,21 +40,29 @@ export const accompanyDreamSeguro = async (params: {
 };
 
 export const searchSymbolMeaning = async (symbol: string): Promise<ClassicalSymbolMeaning> => {
-  if (navigator.onLine && process.env.API_KEY) {
+
+  if (navigator.onLine && API_KEY) {
     try {
       const { remoteSearchSymbol } = await import("./remoteAccompaniment");
       return await remoteSearchSymbol(symbol);
-    } catch (e) {}
+    } catch (e) {
+      console.warn("Búsqueda remota no disponible.");
+    }
   }
-  throw new Error("Consulta externa no disponible. Habita tu propia definición local.");
+
+  throw new Error("Consulta externa no disponible. Verifica la API o conexión.");
 };
 
 export const generateWorkshop = async (content: string): Promise<Workshop> => {
-  if (navigator.onLine && process.env.API_KEY) {
+
+  if (navigator.onLine && API_KEY) {
     try {
       const { remoteGenerateWorkshop } = await import("./remoteAccompaniment");
       return await remoteGenerateWorkshop(content);
-    } catch (e) {}
+    } catch (e) {
+      console.warn("Generación remota no disponible.");
+    }
   }
+
   throw new Error("Generación remota no disponible.");
 };
