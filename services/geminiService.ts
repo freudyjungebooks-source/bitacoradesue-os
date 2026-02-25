@@ -1,4 +1,11 @@
-import { AcompanamientoResponse, AgeGroup, WritingType, ClassicalSymbolMeaning, Workshop } from "../types";
+import { 
+  AcompanamientoResponse, 
+  AgeGroup, 
+  WritingType, 
+  ClassicalSymbolMeaning, 
+  Workshop 
+} from "../types";
+
 import { getLocalAccompaniment } from "./localAccompaniment";
 
 /**
@@ -13,6 +20,11 @@ console.log("API_KEY:", API_KEY);
 console.log("Navigator online:", navigator.onLine);
 console.log("====================");
 
+
+/* ======================================================
+   ACOMPAÑAMIENTO DE SUEÑOS
+====================================================== */
+
 export const accompanyDream = async (params: { 
   title: string, 
   content: string, 
@@ -20,6 +32,7 @@ export const accompanyDream = async (params: {
   ageGroup: AgeGroup 
 }): Promise<AcompanamientoResponse> => {
 
+  // Intento remoto SOLO si hay API key y conexión
   if (navigator.onLine && API_KEY) {
     try {
       const { remoteAccompany } = await import("./remoteAccompaniment");
@@ -30,8 +43,10 @@ export const accompanyDream = async (params: {
     }
   }
 
+  // Fortaleza Local (Core Comunitario)
   return getLocalAccompaniment(params);
 };
+
 
 export const accompanyDreamSeguro = async (params: { 
   title: string, 
@@ -42,24 +57,42 @@ export const accompanyDreamSeguro = async (params: {
   return accompanyDream(params);
 };
 
-export const searchSymbolMeaning = async (symbol: string): Promise<ClassicalSymbolMeaning> => {
+
+/* ======================================================
+   BÚSQUEDA DE SÍMBOLOS (AHORA SEGURA VÍA SERVERLESS)
+====================================================== */
+
+export const searchSymbolMeaning = async (
+  symbol: string
+): Promise<ClassicalSymbolMeaning> => {
 
   console.log("Buscando símbolo:", symbol);
-  console.log("API_KEY disponible:", !!API_KEY);
 
-  if (navigator.onLine && API_KEY) {
-    try {
-      const { remoteSearchSymbol } = await import("./remoteAccompaniment");
-      return await remoteSearchSymbol(symbol);
-    } catch (e) {
-      console.warn("Búsqueda remota no disponible.", e);
-    }
+  const response = await fetch("/api/searchSymbol", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ symbol })
+  });
+
+  if (!response.ok) {
+    throw new Error("Error consultando el servidor.");
   }
 
-  throw new Error("Consulta externa no disponible. Verifica la API o conexión.");
+  const data = await response.json();
+
+  return data;
 };
 
-export const generateWorkshop = async (content: string): Promise<Workshop> => {
+
+/* ======================================================
+   GENERACIÓN DE TALLERES (DE MOMENTO REMOTO)
+====================================================== */
+
+export const generateWorkshop = async (
+  content: string
+): Promise<Workshop> => {
 
   if (navigator.onLine && API_KEY) {
     try {
