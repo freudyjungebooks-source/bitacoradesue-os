@@ -1,21 +1,21 @@
 export default async function handler(req: any, res: any) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "Method not allowed" });
   }
 
   const { symbol } = req.body;
 
   if (!symbol) {
-    return res.status(400).json({ error: 'Symbol is required' });
+    return res.status(400).json({ error: "Symbol is required" });
   }
 
   try {
     const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${process.env.GEMINI_API_KEY}`,
+      `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
       {
-        method: 'POST',
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json'
+          "Content-Type": "application/json"
         },
         body: JSON.stringify({
           contents: [
@@ -23,7 +23,7 @@ export default async function handler(req: any, res: any) {
               parts: [
                 {
                   text: `Explica el significado cultural, simbólico y psicológico del símbolo: ${symbol}.
-Devuelve la respuesta en formato JSON con estas claves:
+Devuelve únicamente JSON válido con estas claves:
 mainDefinition,
 emotionalResonance,
 reflexiveClosure,
@@ -37,16 +37,20 @@ category`
       }
     );
 
+    const text = await response.text();
+
     if (!response.ok) {
-      const errorText = await response.text();
-      return res.status(500).json({ error: errorText });
+      return res.status(500).json({ error: text });
     }
 
-    const data = await response.json();
+    const data = JSON.parse(text);
 
     return res.status(200).json(data);
 
-  } catch (error) {
-    return res.status(500).json({ error: 'Error consultando Gemini' });
+  } catch (error: any) {
+    return res.status(500).json({
+      error: "Error consultando Gemini",
+      details: error?.message
+    });
   }
 }
