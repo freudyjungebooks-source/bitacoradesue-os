@@ -15,7 +15,7 @@ export default async function handler(req, res) {
 
   try {
     const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${process.env.GEMINI_API_KEY}`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
       {
         method: "POST",
         headers: {
@@ -38,36 +38,4 @@ category`
               ]
             }
           ]
-        })
-      }
-    );
-
-    const data = await response.json();
-
-    if (!response.ok) {
-      return res.status(500).json({
-        error: "Error desde Gemini",
-        details: data
-      });
-    }
-
-    const generatedText =
-      data?.candidates?.[0]?.content?.parts?.[0]?.text;
-
-    if (!generatedText) {
-      return res.status(500).json({
-        error: "Respuesta inválida de Gemini"
-      });
-    }
-
-    const cleanJson = JSON.parse(generatedText);
-
-    return res.status(200).json(cleanJson);
-
-  } catch (error) {
-    return res.status(500).json({
-      error: "Error procesando la solicitud",
-      details: error.message
-    });
-  }
-}
+       
