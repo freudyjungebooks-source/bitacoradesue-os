@@ -38,4 +38,45 @@ category`
               ]
             }
           ]
-       
+        })
+      }
+    );
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      return res.status(500).json({
+        error: "Error desde Gemini",
+        details: data
+      });
+    }
+
+    const generatedText =
+      data?.candidates?.[0]?.content?.parts?.[0]?.text;
+
+    if (!generatedText) {
+      return res.status(500).json({
+        error: "Respuesta inválida de Gemini"
+      });
+    }
+
+    let cleanJson;
+
+    try {
+      cleanJson = JSON.parse(generatedText);
+    } catch (e) {
+      return res.status(500).json({
+        error: "Gemini no devolvió JSON válido",
+        raw: generatedText
+      });
+    }
+
+    return res.status(200).json(cleanJson);
+
+  } catch (error) {
+    return res.status(500).json({
+      error: "Error procesando la solicitud",
+      details: error.message
+    });
+  }
+}
