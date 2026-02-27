@@ -61,7 +61,6 @@ category`
       });
     }
 
-    // Intentamos convertir lo que Gemini devuelve en JSON limpio
     const cleanJson = JSON.parse(generatedText);
 
     return res.status(200).json(cleanJson);
