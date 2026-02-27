@@ -15,7 +15,7 @@ export default async function handler(req, res) {
 
   try {
     const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${process.env.GEMINI_API_KEY}`,
       {
         method: "POST",
         headers: {
@@ -24,6 +24,7 @@ export default async function handler(req, res) {
         body: JSON.stringify({
           contents: [
             {
+              role: "user",
               parts: [
                 {
                   text: `Explica el significado cultural, simbólico y psicológico del símbolo: ${symbol}.
@@ -41,16 +42,14 @@ category`
       }
     );
 
-    const rawText = await response.text();
+    const data = await response.json();
 
     if (!response.ok) {
       return res.status(500).json({
         error: "Error desde Gemini",
-        details: rawText
+        details: data
       });
     }
-
-    const data = JSON.parse(rawText);
 
     const generatedText =
       data?.candidates?.[0]?.content?.parts?.[0]?.text;
