@@ -105,3 +105,35 @@
     "isEmergent": false
   }
 ]
+{
+  "symbol": "Amor",
+  "category": "Relacional",
+  "mainDefinition": "El amor simboliza la fuerza de atracción que une, transforma y expande la identidad más allá del yo individual.",
+  "emotionalResonance": "Despierta entrega, deseo, vulnerabilidad y trascendencia.",
+  "archetypalLayer": "En la psicología profunda, el amor representa el encuentro entre anima y animus, la integración de lo otro en el interior.",
+  "transformativeDimension": "El amor auténtico desestructura el ego rígido y obliga a crecer.",
+  "processAxis": "Unión, diferenciación e integración.",
+  "culturalComparative": [
+    {
+      "tradition": "Grecia clásica",
+      "sourceContext": "Mito de Eros",
+      "meaning": "Eros es fuerza primordial que impulsa la creación y el deseo."
+    },
+    {
+      "tradition": "Cristianismo",
+      "sourceContext": "Ágape",
+      "meaning": "Amor como entrega desinteresada y trascendencia espiritual."
+    },
+    {
+      "tradition": "Diccionario de los Símbolos - Chevalier",
+      "sourceContext": "Entrada Amor",
+      "meaning": "Principio de cohesión universal que une contrarios."
+    }
+  ],
+  "guidingQuestions": [
+    "¿Qué parte de ti se transforma cuando amas?",
+    "¿Es tu amor posesión o encuentro?",
+    "¿Qué te revela el otro sobre ti?"
+  ],
+  "isEmergent": false
+}
