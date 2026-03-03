@@ -2,106 +2,120 @@
   {
     "symbol": "Agua",
     "category": "Elemento",
-    "mainDefinition": "El agua representa el origen primordial de la vida, el flujo incesante de la conciencia y la capacidad de purificación. Es un símbolo de adaptabilidad que toma la forma del recipiente que lo contiene, evocando la naturaleza plástica del ser y sus emociones cambiantes.",
-    "emotionalResonance": "Moviliza sentimientos de calma, fluidez y renovación. Puede evocar la paz de un manantial o la intensidad de una tempestad interna que busca limpiar lo antiguo para dar paso a lo nuevo.",
-    "pedagogicalCycles": {
-      "preescolar": "Explorar el agua como fuente de vida y nido de los seres vivos.",
-      "primaria": "Narrar el ciclo del agua como metáfora del crecimiento personal y el cambio constante.",
-      "secundaria": "Analizar la fluidez narrativa y la transparencia en la expresión de la identidad propia.",
-      "media": "Reflexionar sobre la ética del cuidado del agua como sustento planetario y legado vital.",
-      "adultos": "Habitar la quietud del agua como espacio de meditación, memoria profunda y sentido."
-    },
-    "languageCompetencies": "Potencia la descripción sensorial, el uso de adjetivos de textura y la construcción de relatos de transición.",
-    "reflexiveClosure": "¿Qué corriente habita hoy en tu silencio?",
+    "mainDefinition": "El agua representa el origen primordial de la vida, el flujo de la conciencia y la capacidad de purificación y adaptación.",
+    "culturalLayer": "En múltiples tradiciones el agua simboliza el caos primigenio, el bautismo, la regeneración y el principio femenino creador.",
+    "archetypalLayer": "Es imagen del inconsciente profundo, de lo que fluye bajo la superficie del yo consciente.",
+    "transformativeDimension": "Disuelve formas rígidas y permite la renovación. Limpia, arrastra y reinicia ciclos.",
+    "processAxis": "Invita a fluir en lugar de resistir. Señala movimiento emocional y adaptación interior.",
+    "emotionalResonance": "Evoca calma, profundidad y también tormenta interior.",
     "guidingQuestions": [
-      "¿Hacia dónde fluye tu palabra hoy?",
-      "¿Es tu sentir un agua calma o en movimiento?",
-      "¿Qué se limpia en ti cuando escribes?"
+      "¿Qué emoción necesita fluir?",
+      "¿Qué parte de ti requiere limpieza o renovación?",
+      "¿Estás resistiendo o permitiendo el movimiento?"
     ],
+    "related": ["inconsciente", "flujo", "purificacion", "emocion", "origen"],
     "isEmergent": false
   },
   {
     "symbol": "Árbol",
     "category": "Naturaleza",
-    "mainDefinition": "Símbolo de la vida en perpetua evolución y la conexión entre los planos de la existencia. Sus raíces profundas representan el vínculo con la tierra y los ancestros, mientras sus ramas ascendentes simbolizan el crecimiento del espíritu hacia la luz.",
-    "emotionalResonance": "Transmite seguridad, paciencia y pertenencia.",
-    "pedagogicalCycles": {
-      "preescolar": "El árbol como casa y protección para los amigos de la naturaleza.",
-      "primaria": "Dibujar y narrar el árbol genealógico de los sueños.",
-      "secundaria": "La resiliencia del tronco ante el cambio.",
-      "media": "El legado y los frutos en comunidad.",
-      "adultos": "Integrar la historia personal como raíz."
-    },
-    "languageCompetencies": "Fomenta la metáfora biográfica.",
-    "reflexiveClosure": "¿Cuáles son las raíces que sostienen tu palabra?",
+    "mainDefinition": "El árbol simboliza la vida en crecimiento y la conexión entre tierra y cielo.",
+    "culturalLayer": "En mitologías universales aparece como Árbol del Mundo, eje cósmico que une planos de existencia.",
+    "archetypalLayer": "Representa la estructura del ser: raíces (origen), tronco (identidad), ramas (expansión).",
+    "transformativeDimension": "Crece lentamente; expresa maduración y consolidación.",
+    "processAxis": "Indica desarrollo progresivo y fidelidad a las raíces.",
+    "emotionalResonance": "Transmite estabilidad, pertenencia y continuidad.",
     "guidingQuestions": [
-      "¿Qué frutos estás dando hoy?",
+      "¿Qué raíces sostienen tu presente?",
       "¿Qué parte de ti busca crecer?",
-      "¿Qué raíz necesitas fortalecer?"
+      "¿Qué frutos estás dando?"
     ],
+    "related": ["raices", "crecimiento", "linaje", "estabilidad", "vida"],
     "isEmergent": false
   },
   {
     "symbol": "Puente",
     "category": "Transito",
-    "mainDefinition": "Representa el paso entre dos estados o realidades. Cruzar un puente implica transformación y decisión.",
-    "emotionalResonance": "Evoca cambio, valentía y encuentro.",
-    "pedagogicalCycles": {
-      "preescolar": "Unir dos puntos como gesto de amistad.",
-      "primaria": "Historias de viajes y cambios.",
-      "secundaria": "Dialogar para comprender al otro.",
-      "media": "Transiciones de vida y responsabilidad.",
-      "adultos": "Reconciliar pasado y presente."
-    },
-    "languageCompetencies": "Fortalece conectores y argumentación.",
-    "reflexiveClosure": "¿Qué estás cruzando hoy?",
+    "mainDefinition": "El puente simboliza el paso entre dos estados, etapas o realidades.",
+    "culturalLayer": "En relatos iniciáticos representa el cruce entre mundos o niveles de conciencia.",
+    "archetypalLayer": "Es el arquetipo del umbral y la decisión.",
+    "transformativeDimension": "Marca transición y transformación consciente.",
+    "processAxis": "Indica movimiento entre pasado y futuro.",
+    "emotionalResonance": "Evoca valentía y apertura al cambio.",
     "guidingQuestions": [
+      "¿Qué estás cruzando en tu vida?",
       "¿Qué dejas atrás?",
-      "¿Qué te espera al otro lado?",
-      "¿Quién camina contigo?"
+      "¿Qué te espera al otro lado?"
     ],
+    "related": ["transicion", "umbral", "decision", "cambio", "paso"],
     "isEmergent": false
   },
   {
     "symbol": "Semilla",
-    "category": "Memoria",
-    "mainDefinition": "Simboliza el potencial latente y el inicio de todo proceso creativo.",
-    "emotionalResonance": "Invita a la paciencia y a la confianza en el crecimiento.",
-    "pedagogicalCycles": {
-      "preescolar": "Observar cómo germina una semilla.",
-      "primaria": "Escribir sobre talentos personales.",
-      "secundaria": "Reconocer sueños en desarrollo.",
-      "media": "Diseñar proyectos de vida.",
-      "adultos": "Reflexionar sobre el legado."
-    },
-    "languageCompetencies": "Desarrolla la narración de procesos.",
-    "reflexiveClosure": "¿Qué estás sembrando hoy?",
+    "category": "Potencial",
+    "mainDefinition": "La semilla simboliza el potencial latente y el inicio de todo proceso creativo.",
+    "culturalLayer": "Asociada a ciclos agrícolas y renacimiento estacional en múltiples culturas.",
+    "archetypalLayer": "Imagen del germen interior que aún no se manifiesta pero contiene totalidad.",
+    "transformativeDimension": "Necesita oscuridad y tiempo antes de emerger.",
+    "processAxis": "Invita a confiar en procesos invisibles.",
+    "emotionalResonance": "Despierta paciencia y esperanza.",
     "guidingQuestions": [
-      "¿Qué necesita tu semilla?",
-      "¿Aceptas el tiempo del crecimiento?",
-      "¿Dónde decides sembrar?"
+      "¿Qué está germinando en ti?",
+      "¿Estás respetando el tiempo del crecimiento?",
+      "¿Dónde decides sembrar tu energía?"
     ],
+    "related": ["inicio", "crecimiento", "proceso", "potencial", "gestacion"],
     "isEmergent": false
   },
   {
     "symbol": "Espejo",
-    "category": "Arquetipo",
-    "mainDefinition": "Simboliza el autoconocimiento y la conciencia reflexiva.",
-    "emotionalResonance": "Puede generar confrontación o aceptación.",
-    "pedagogicalCycles": {
-      "preescolar": "Reconocer el propio rostro.",
-      "primaria": "Autorretratos narrativos.",
-      "secundaria": "Explorar identidad.",
-      "media": "Ejercer pensamiento crítico.",
-      "adultos": "Reconciliarse con la propia imagen."
-    },
-    "languageCompetencies": "Estimula la escritura en primera persona.",
-    "reflexiveClosure": "¿Te reconoces en lo que escribes?",
+    "category": "Conciencia",
+    "mainDefinition": "El espejo simboliza autoconocimiento y reflexión.",
+    "culturalLayer": "En tradiciones simbólicas representa verdad, revelación y confrontación con la propia imagen.",
+    "archetypalLayer": "Es el encuentro con la sombra y la identidad.",
+    "transformativeDimension": "Permite reconocer lo negado e integrarlo.",
+    "processAxis": "Invita a la introspección consciente.",
+    "emotionalResonance": "Puede generar aceptación o incomodidad.",
     "guidingQuestions": [
-      "¿Qué parte de ti no miras?",
-      "¿Qué descubres al observarte?",
-      "¿Qué aceptarías hoy?"
+      "¿Qué parte de ti no estás mirando?",
+      "¿Qué descubres cuando te observas sin juicio?",
+      "¿Te reconoces en tu palabra?"
     ],
+    "related": ["identidad", "sombra", "verdad", "reflexion", "imagen"],
+    "isEmergent": false
+  },
+  {
+    "symbol": "Enfermedad",
+    "category": "Transformacion",
+    "mainDefinition": "La enfermedad simboliza una interrupción del equilibrio habitual que obliga a detenerse.",
+    "culturalLayer": "En diversas tradiciones ha sido entendida como prueba, purificación o llamado espiritual.",
+    "archetypalLayer": "Es la herida que confronta al yo con su fragilidad.",
+    "transformativeDimension": "Suspende la velocidad externa para activar revisión interna.",
+    "processAxis": "Puede marcar redirección o nuevo sentido vital.",
+    "emotionalResonance": "Evoca vulnerabilidad y posibilidad de renacimiento.",
+    "guidingQuestions": [
+      "¿Qué parte de tu vida pide atención?",
+      "¿Qué ritmo necesita detenerse?",
+      "¿Qué transformación se está gestando?"
+    ],
+    "related": ["crisis", "cuerpo", "dolor", "renacimiento", "proceso"],
+    "isEmergent": false
+  },
+  {
+    "symbol": "Camino",
+    "category": "Proceso",
+    "mainDefinition": "El camino simboliza el recorrido vital y la dirección existencial.",
+    "culturalLayer": "Presente en peregrinaciones y relatos heroicos como imagen de búsqueda.",
+    "archetypalLayer": "Es el viaje del héroe hacia integración y sentido.",
+    "transformativeDimension": "Cada tramo implica aprendizaje y cambio.",
+    "processAxis": "Expresa movimiento continuo hacia propósito.",
+    "emotionalResonance": "Genera sensación de avance o incertidumbre.",
+    "guidingQuestions": [
+      "¿Hacia dónde te diriges?",
+      "¿Quién camina contigo?",
+      "¿Qué tramo necesitas recorrer ahora?"
+    ],
+    "related": ["viaje", "direccion", "destino", "busqueda", "movimiento"],
     "isEmergent": false
   }
 ]
