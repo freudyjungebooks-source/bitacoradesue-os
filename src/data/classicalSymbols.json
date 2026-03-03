@@ -1,0 +1,56 @@
+[
+  {
+    "symbol": "Agua",
+    "category": "Elemento",
+    "mainDefinition": "El agua representa el origen primordial y el flujo continuo de transformación.",
+    "archetypalLayer": "Imagen del inconsciente y del mundo emocional profundo.",
+    "transformativeDimension": "Disuelve estructuras rígidas y permite renovación.",
+    "processAxis": "Fluir y adaptarse.",
+    "emotionalResonance": "Calma, profundidad o tormenta.",
+    "related": ["flujo", "emocion", "origen"],
+    "culturalComparative": [
+      {
+        "tradition": "Popol Vuh (Maya K'iche')",
+        "sourceContext": "Relato cosmogónico mesoamericano",
+        "meaning": "Antes de la creación humana solo existía el cielo y el mar en reposo."
+      },
+      {
+        "tradition": "Cristianismo",
+        "sourceContext": "Biblia",
+        "meaning": "Símbolo de purificación y renacimiento espiritual."
+      },
+      {
+        "tradition": "Psicología profunda",
+        "sourceContext": "Carl Jung",
+        "meaning": "Representa el inconsciente colectivo."
+      }
+    ]
+  },
+  {
+    "symbol": "Enfermedad",
+    "category": "Transformacion",
+    "mainDefinition": "Interrupción del equilibrio que obliga a revisión interior.",
+    "archetypalLayer": "La herida que confronta al yo con su límite.",
+    "transformativeDimension": "Detiene el ritmo exterior y abre espacio de conciencia.",
+    "processAxis": "Crisis y reorientación.",
+    "emotionalResonance": "Vulnerabilidad y posible renacimiento.",
+    "related": ["crisis", "dolor"],
+    "culturalComparative": [
+      {
+        "tradition": "Tradiciones chamánicas",
+        "sourceContext": "Sanación ancestral",
+        "meaning": "Desequilibrio que requiere armonización."
+      },
+      {
+        "tradition": "Cristianismo medieval",
+        "sourceContext": "Teología del sufrimiento",
+        "meaning": "Prueba o purificación espiritual."
+      },
+      {
+        "tradition": "Psicología simbólica",
+        "sourceContext": "Visión contemporánea",
+        "meaning": "Conflicto no integrado que busca conciencia."
+      }
+    ]
+  }
+]
