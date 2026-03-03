@@ -163,3 +163,29 @@
   ],
   "isEmergent": false
 }
+{
+  "symbol": "Pareja",
+  "category": "Relacional",
+  "mainDefinition": "La pareja simboliza el espejo dinámico donde el yo se confronta y se expande.",
+  "emotionalResonance": "Activa apego, conflicto, intimidad y miedo al abandono.",
+  "archetypalLayer": "Es el escenario donde se dramatizan vínculos primarios no resueltos.",
+  "transformativeDimension": "Puede conducir a integración o repetición inconsciente.",
+  "processAxis": "Encuentro, conflicto e individuación.",
+  "culturalComparative": [
+    {
+      "tradition": "Mitología mesoamericana",
+      "sourceContext": "Dualidad cósmica",
+      "meaning": "La creación surge de la complementariedad de opuestos."
+    },
+    {
+      "tradition": "Psicología profunda",
+      "sourceContext": "Jung",
+      "meaning": "La pareja activa proyecciones del inconsciente."
+    }
+  ],
+  "guidingQuestions": [
+    "¿Amas al otro o a la imagen que proyectas?",
+    "¿Qué herida se activa en el vínculo?"
+  ],
+  "isEmergent": false
+}
