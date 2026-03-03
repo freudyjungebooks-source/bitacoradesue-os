@@ -137,3 +137,29 @@
   ],
   "isEmergent": false
 }
+{
+  "symbol": "Cupido",
+  "category": "Mitologico",
+  "mainDefinition": "Cupido representa el impulso súbito e irracional del enamoramiento.",
+  "emotionalResonance": "Evoca fascinación, deseo y pérdida momentánea de control.",
+  "archetypalLayer": "Es la irrupción del deseo que desarma las defensas del yo.",
+  "transformativeDimension": "Activa proyecciones inconscientes sobre el otro.",
+  "processAxis": "Proyección y despertar del deseo.",
+  "culturalComparative": [
+    {
+      "tradition": "Roma antigua",
+      "sourceContext": "Mito de Cupido y Psique",
+      "meaning": "El amor necesita atravesar pruebas para madurar."
+    },
+    {
+      "tradition": "Cirlot - Diccionario de Símbolos",
+      "sourceContext": "Entrada Flecha",
+      "meaning": "La flecha simboliza penetración súbita de una energía psíquica."
+    }
+  ],
+  "guidingQuestions": [
+    "¿Qué estás proyectando en la persona amada?",
+    "¿Es deseo o reconocimiento profundo?"
+  ],
+  "isEmergent": false
+}
