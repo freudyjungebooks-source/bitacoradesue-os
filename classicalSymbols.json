@@ -189,3 +189,29 @@
   ],
   "isEmergent": false
 }
+{
+  "symbol": "Enfermedad",
+  "category": "Transformacion",
+  "mainDefinition": "La enfermedad puede simbolizar una ruptura del equilibrio psíquico y corporal que exige revisión interior.",
+  "emotionalResonance": "Vulnerabilidad, límite y posibilidad de cambio.",
+  "archetypalLayer": "La herida como llamada de conciencia.",
+  "transformativeDimension": "El cuerpo puede expresar conflictos que no han sido simbolizados.",
+  "processAxis": "Crisis y resignificación.",
+  "culturalComparative": [
+    {
+      "tradition": "Chevalier",
+      "sourceContext": "Entrada Enfermedad",
+      "meaning": "Alteración del orden que puede tener dimensión simbólica."
+    },
+    {
+      "tradition": "Psicosomática contemporánea",
+      "sourceContext": "Enfoque simbólico del cuerpo",
+      "meaning": "El cuerpo puede manifestar tensiones emocionales no elaboradas."
+    }
+  ],
+  "guidingQuestions": [
+    "¿Qué emoción no encuentra palabra?",
+    "¿Qué conflicto busca expresión?"
+  ],
+  "isEmergent": false
+}
