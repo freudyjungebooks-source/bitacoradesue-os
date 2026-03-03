@@ -1,5 +1,5 @@
-import { PersonalWord, ClassicalSymbolMeaning, AgeGroup, SymbolicCategory } from '../types';
-import { normalizeSpanishText, normalizeSystemText } from '../utils/linguisticNormalizer';
+import { PersonalWord, SymbolicCategory } from '../types';
+import { normalizeSystemText } from '../utils/linguisticNormalizer';
 
 export interface SymbolEntry extends PersonalWord {
   metaphors: string[];
@@ -7,16 +7,11 @@ export interface SymbolEntry extends PersonalWord {
   isConfirmedByAuthor: boolean;
   type: 'clásico' | 'personal' | 'emergente';
   isIntimate?: boolean;
+  related?: string[];
 }
 
-const STORAGE_KEY = 'bitacora_diccionario_v6_consolidated';
+const STORAGE_KEY = 'bitacora_diccionario_v7_local_only';
 
-/**
- * REGLAS DE COMPORTAMIENTO ÉTICO DEL DICCIONARIO (CORE V2)
- * 1. NO INTERPRETACIÓN: El sistema ofrece ecos culturales, no verdades psicológicas.
- * 2. SOBERANÍA: El usuario puede sobreescribir cualquier significado clásico con su vivencia.
- * 3. PEDAGOGÍA ACTIVA: Se integran los ciclos vitales y competencias del lenguaje.
- */
 export const symbolDictionaryService = {
 
   async initializeIfEmpty(): Promise<void> {
@@ -25,11 +20,10 @@ export const symbolDictionaryService = {
     if (current.length === 0) {
       try {
 
-        // 🔹 CORRECCIÓN CLAVE: ruta absoluta desde /public
         const response = await fetch('/data/classicalSymbols.json');
 
         if (!response.ok) {
-          throw new Error("No se pudo cargar la semilla clásica.");
+          throw new Error("No se pudo cargar el diccionario local.");
         }
 
         const classics: any[] = await response.json();
@@ -42,25 +36,11 @@ export const symbolDictionaryService = {
           origin: 'clásico',
           type: 'clásico',
           isIntimate: false,
-          classicalData: {
-            symbol: s.symbol,
-            category: s.category,
-            mainDefinition: s.mainDefinition,
-            emotionalResonance: s.emotionalResonance,
-            pedagogicalCycles: s.pedagogicalCycles,
-            languageCompetencies: s.languageCompetencies,
-            reflexiveClosure: s.reflexiveClosure,
-            guidingQuestions: s.guidingQuestions,
-            isEmergent: s.isEmergent || false
-          },
+          related: s.related || [],
+          classicalData: s,
           definicionPersonal: "",
           definicionAcademica: s.mainDefinition,
           resonanciaEmocional: s.emotionalResonance,
-          usoPedagogico: s.pedagogicalCycles?.primaria ?? "",
-          pedagogicalUse: s.pedagogicalCycles?.primaria ?? "",
-          languageCompetencies: s.languageCompetencies,
-          reflexiveClosure: s.reflexiveClosure,
-          pedagogicalCycles: s.pedagogicalCycles,
           isConfirmedByAuthor: false,
           createdAt: new Date().toISOString(),
           metaphors: []
@@ -89,6 +69,29 @@ export const symbolDictionaryService = {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(symbols));
   },
 
+  searchSymbol(term: string): SymbolEntry | null {
+    const symbols = this.getAllSymbols();
+    const normalized = normalizeSystemText(term);
+
+    // 1. Coincidencia exacta
+    const exact = symbols.find(
+      s => s.word.toLowerCase() === normalized.toLowerCase()
+    );
+
+    if (exact) return exact;
+
+    // 2. Coincidencia por related
+    const relatedMatch = symbols.find(
+      s => s.related?.some(r =>
+        r.toLowerCase().includes(normalized.toLowerCase())
+      )
+    );
+
+    if (relatedMatch) return relatedMatch;
+
+    return null;
+  },
+
   async addPersonalSymbol(word: PersonalWord): Promise<void> {
 
     const symbols = this.getAllSymbols();
@@ -104,12 +107,7 @@ export const symbolDictionaryService = {
       metaphors: [],
       isConfirmedByAuthor: true,
       isIntimate: word.isPrivate ?? true,
-      type:
-        word.origin === 'personal'
-          ? 'personal'
-          : word.origin === 'emergencia'
-          ? 'emergente'
-          : 'clásico'
+      type: word.origin === 'personal' ? 'personal' : 'emergente'
     };
 
     if (exists) {
@@ -117,7 +115,6 @@ export const symbolDictionaryService = {
         ...exists,
         userValidation: word.definicionPersonal || word.meaning,
         isConfirmedByAuthor: true,
-        isIntimate: word.isPrivate,
         type: 'personal'
       };
     } else {
