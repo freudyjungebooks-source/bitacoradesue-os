@@ -1,81 +1,50 @@
-export default async function handler(req, res) {
-  if (req.method !== "POST") {
-    return res.status(405).json({ error: "Method not allowed" });
+searchSymbol(query: string) {
+  if (!query) return null;
+
+  const q = query.toLowerCase().trim();
+
+  // 1. Coincidencia exacta
+  const exact = this.symbols.find(
+    (s: any) => s.symbol.toLowerCase() === q
+  );
+  if (exact) return exact;
+
+  // 2. Coincidencia por related
+  const relatedMatch = this.symbols.find(
+    (s: any) =>
+      s.related &&
+      s.related.some((r: string) =>
+        r.toLowerCase().includes(q)
+      )
+  );
+  if (relatedMatch) return relatedMatch;
+
+  // 3. Coincidencia por categoría
+  const categoryMatch = this.symbols.find(
+    (s: any) =>
+      s.category &&
+      s.category.toLowerCase().includes(q)
+  );
+  if (categoryMatch) return categoryMatch;
+
+  // 4. Coincidencia por eje de proceso (atlas transversal)
+  const processMatch = this.symbols.filter(
+    (s: any) =>
+      s.processAxis &&
+      s.processAxis.toLowerCase().includes(q)
+  );
+
+  if (processMatch.length > 0) {
+    return {
+      symbol: "Eje simbólico relacionado",
+      definicionAcademica:
+        "La palabra ingresada no corresponde a un símbolo específico, pero pertenece a un eje de transformación presente en el atlas.",
+      resonanciaEmocional:
+        "Explora los siguientes símbolos vinculados a este proceso.",
+      category: "Eje",
+      relatedSymbols: processMatch
+    };
   }
 
-  const { symbol } = req.body;
-
-  if (!symbol) {
-    return res.status(400).json({ error: "Symbol is required" });
-  }
-
-  if (!process.env.GEMINI_API_KEY) {
-    return res.status(500).json({ error: "GEMINI_API_KEY no configurada" });
-  }
-
-  try {
-    const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1/models/gemini-2.0-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          contents: [
-            {
-              parts: [
-                {
-                  text: `Explica el significado cultural, simbólico y psicológico del símbolo: ${symbol}.
-Devuelve únicamente JSON válido con estas claves:
-mainDefinition,
-emotionalResonance,
-reflexiveClosure,
-guidingQuestions (array),
-category`
-                }
-              ]
-            }
-          ]
-        })
-      }
-    );
-
-    const data = await response.json();
-
-    if (!response.ok) {
-      return res.status(500).json({
-        error: "Error desde Gemini",
-        details: data
-      });
-    }
-
-    const generatedText =
-      data?.candidates?.[0]?.content?.parts?.[0]?.text;
-
-    if (!generatedText) {
-      return res.status(500).json({
-        error: "Respuesta inválida de Gemini"
-      });
-    }
-
-    let cleanJson;
-
-    try {
-      cleanJson = JSON.parse(generatedText);
-    } catch (e) {
-      return res.status(500).json({
-        error: "Gemini no devolvió JSON válido",
-        raw: generatedText
-      });
-    }
-
-    return res.status(200).json(cleanJson);
-
-  } catch (error) {
-    return res.status(500).json({
-      error: "Error procesando la solicitud",
-      details: error.message
-    });
-  }
+  return null;
 }
