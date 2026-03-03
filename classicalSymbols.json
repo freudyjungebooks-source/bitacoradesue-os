@@ -2,216 +2,68 @@
   {
     "symbol": "Agua",
     "category": "Elemento",
-    "mainDefinition": "El agua representa el origen primordial de la vida, el flujo incesante de la conciencia y la capacidad de purificación. Es un símbolo de adaptabilidad que toma la forma del recipiente que lo contiene, evocando la naturaleza plástica del ser y sus emociones cambiantes.",
-    "emotionalResonance": "Moviliza sentimientos de calma, fluidez y renovación. Puede evocar la paz de un manantial o la intensidad de una tempestad interna que busca limpiar lo antiguo para dar paso a lo nuevo.",
-    "pedagogicalCycles": {
-      "preescolar": "Explorar el agua como fuente de vida y nido de los seres vivos.",
-      "primaria": "Narrar el ciclo del agua como metáfora del crecimiento personal y el cambio constante.",
-      "secundaria": "Analizar la fluidez narrativa y la transparencia en la expresión de la identidad propia.",
-      "media": "Reflexionar sobre la ética del cuidado del agua como sustento planetario y legado vital.",
-      "adultos": "Habitar la quietud del agua como espacio de meditación, memoria profunda y sentido."
-    },
-    "languageCompetencies": "Potencia la descripción sensorial, el uso de adjetivos de textura y la construcción de relatos de transición.",
-    "reflexiveClosure": "¿Qué corriente habita hoy en tu silencio?",
-    "guidingQuestions": [
-      "¿Hacia dónde fluye tu palabra hoy?",
-      "¿Es tu sentir un agua calma o en movimiento?",
-      "¿Qué se limpia en ti cuando escribes?"
-    ],
+    "mainDefinition": "El agua representa el origen primordial de la vida, el flujo incesante de la conciencia y la capacidad de purificación.",
+    "emotionalResonance": "Calma, fluidez y renovación.",
     "isEmergent": false
   },
   {
     "symbol": "Árbol",
     "category": "Naturaleza",
-    "mainDefinition": "Símbolo de la vida en perpetua evolución y la conexión entre los planos de la existencia. Sus raíces profundas representan el vínculo con la tierra y los ancestros, mientras sus ramas ascendentes simbolizan el crecimiento del espíritu hacia la luz.",
-    "emotionalResonance": "Transmite seguridad, paciencia y pertenencia.",
-    "pedagogicalCycles": {
-      "preescolar": "El árbol como casa y protección para los amigos de la naturaleza.",
-      "primaria": "Dibujar y narrar el árbol genealógico de los sueños.",
-      "secundaria": "La resiliencia del tronco ante el cambio.",
-      "media": "El legado y los frutos en comunidad.",
-      "adultos": "Integrar la historia personal como raíz."
-    },
-    "languageCompetencies": "Fomenta la metáfora biográfica.",
-    "reflexiveClosure": "¿Cuáles son las raíces que sostienen tu palabra?",
-    "guidingQuestions": [
-      "¿Qué frutos estás dando hoy?",
-      "¿Qué parte de ti busca crecer?",
-      "¿Qué raíz necesitas fortalecer?"
-    ],
+    "mainDefinition": "Símbolo de la vida en evolución y la conexión entre raíces y expansión.",
+    "emotionalResonance": "Seguridad y pertenencia.",
     "isEmergent": false
   },
   {
     "symbol": "Puente",
     "category": "Transito",
-    "mainDefinition": "Representa el paso entre dos estados o realidades. Cruzar un puente implica transformación y decisión.",
-    "emotionalResonance": "Evoca cambio, valentía y encuentro.",
-    "pedagogicalCycles": {
-      "preescolar": "Unir dos puntos como gesto de amistad.",
-      "primaria": "Historias de viajes y cambios.",
-      "secundaria": "Dialogar para comprender al otro.",
-      "media": "Transiciones de vida y responsabilidad.",
-      "adultos": "Reconciliar pasado y presente."
-    },
-    "languageCompetencies": "Fortalece conectores y argumentación.",
-    "reflexiveClosure": "¿Qué estás cruzando hoy?",
-    "guidingQuestions": [
-      "¿Qué dejas atrás?",
-      "¿Qué te espera al otro lado?",
-      "¿Quién camina contigo?"
-    ],
+    "mainDefinition": "Representa el paso entre dos estados o realidades.",
+    "emotionalResonance": "Cambio y valentía.",
     "isEmergent": false
   },
   {
     "symbol": "Semilla",
     "category": "Memoria",
-    "mainDefinition": "Simboliza el potencial latente y el inicio de todo proceso creativo.",
-    "emotionalResonance": "Invita a la paciencia y a la confianza en el crecimiento.",
-    "pedagogicalCycles": {
-      "preescolar": "Observar cómo germina una semilla.",
-      "primaria": "Escribir sobre talentos personales.",
-      "secundaria": "Reconocer sueños en desarrollo.",
-      "media": "Diseñar proyectos de vida.",
-      "adultos": "Reflexionar sobre el legado."
-    },
-    "languageCompetencies": "Desarrolla la narración de procesos.",
-    "reflexiveClosure": "¿Qué estás sembrando hoy?",
-    "guidingQuestions": [
-      "¿Qué necesita tu semilla?",
-      "¿Aceptas el tiempo del crecimiento?",
-      "¿Dónde decides sembrar?"
-    ],
+    "mainDefinition": "Simboliza el potencial latente y el inicio de un proceso.",
+    "emotionalResonance": "Paciencia y esperanza.",
     "isEmergent": false
   },
   {
     "symbol": "Espejo",
     "category": "Arquetipo",
     "mainDefinition": "Simboliza el autoconocimiento y la conciencia reflexiva.",
-    "emotionalResonance": "Puede generar confrontación o aceptación.",
-    "pedagogicalCycles": {
-      "preescolar": "Reconocer el propio rostro.",
-      "primaria": "Autorretratos narrativos.",
-      "secundaria": "Explorar identidad.",
-      "media": "Ejercer pensamiento crítico.",
-      "adultos": "Reconciliarse con la propia imagen."
-    },
-    "languageCompetencies": "Estimula la escritura en primera persona.",
-    "reflexiveClosure": "¿Te reconoces en lo que escribes?",
-    "guidingQuestions": [
-      "¿Qué parte de ti no miras?",
-      "¿Qué descubres al observarte?",
-      "¿Qué aceptarías hoy?"
-    ],
+    "emotionalResonance": "Confrontación o aceptación.",
+    "isEmergent": false
+  },
+  {
+    "symbol": "Amor",
+    "category": "Relacional",
+    "mainDefinition": "El amor simboliza la fuerza de unión que transforma la identidad y confronta al ego.",
+    "emotionalResonance": "Entrega, deseo y vulnerabilidad.",
+    "processAxis": "Unión e integración",
+    "isEmergent": false
+  },
+  {
+    "symbol": "Cupido",
+    "category": "Mitologico",
+    "mainDefinition": "Representa el impulso súbito del deseo y la proyección inconsciente sobre el otro.",
+    "emotionalResonance": "Fascinación y pérdida momentánea de control.",
+    "processAxis": "Proyección",
+    "isEmergent": false
+  },
+  {
+    "symbol": "Pareja",
+    "category": "Relacional",
+    "mainDefinition": "La pareja simboliza el espejo donde emergen heridas, proyecciones y posibilidades de crecimiento.",
+    "emotionalResonance": "Apego, conflicto e intimidad.",
+    "processAxis": "Encuentro y diferenciación",
+    "isEmergent": false
+  },
+  {
+    "symbol": "Enfermedad",
+    "category": "Transformacion",
+    "mainDefinition": "Puede simbolizar una ruptura del equilibrio que exige revisión interior.",
+    "emotionalResonance": "Vulnerabilidad y transformación.",
+    "processAxis": "Crisis y resignificación",
     "isEmergent": false
   }
 ]
-{
-  "symbol": "Amor",
-  "category": "Relacional",
-  "mainDefinition": "El amor simboliza la fuerza de atracción que une, transforma y expande la identidad más allá del yo individual.",
-  "emotionalResonance": "Despierta entrega, deseo, vulnerabilidad y trascendencia.",
-  "archetypalLayer": "En la psicología profunda, el amor representa el encuentro entre anima y animus, la integración de lo otro en el interior.",
-  "transformativeDimension": "El amor auténtico desestructura el ego rígido y obliga a crecer.",
-  "processAxis": "Unión, diferenciación e integración.",
-  "culturalComparative": [
-    {
-      "tradition": "Grecia clásica",
-      "sourceContext": "Mito de Eros",
-      "meaning": "Eros es fuerza primordial que impulsa la creación y el deseo."
-    },
-    {
-      "tradition": "Cristianismo",
-      "sourceContext": "Ágape",
-      "meaning": "Amor como entrega desinteresada y trascendencia espiritual."
-    },
-    {
-      "tradition": "Diccionario de los Símbolos - Chevalier",
-      "sourceContext": "Entrada Amor",
-      "meaning": "Principio de cohesión universal que une contrarios."
-    }
-  ],
-  "guidingQuestions": [
-    "¿Qué parte de ti se transforma cuando amas?",
-    "¿Es tu amor posesión o encuentro?",
-    "¿Qué te revela el otro sobre ti?"
-  ],
-  "isEmergent": false
-}
-{
-  "symbol": "Cupido",
-  "category": "Mitologico",
-  "mainDefinition": "Cupido representa el impulso súbito e irracional del enamoramiento.",
-  "emotionalResonance": "Evoca fascinación, deseo y pérdida momentánea de control.",
-  "archetypalLayer": "Es la irrupción del deseo que desarma las defensas del yo.",
-  "transformativeDimension": "Activa proyecciones inconscientes sobre el otro.",
-  "processAxis": "Proyección y despertar del deseo.",
-  "culturalComparative": [
-    {
-      "tradition": "Roma antigua",
-      "sourceContext": "Mito de Cupido y Psique",
-      "meaning": "El amor necesita atravesar pruebas para madurar."
-    },
-    {
-      "tradition": "Cirlot - Diccionario de Símbolos",
-      "sourceContext": "Entrada Flecha",
-      "meaning": "La flecha simboliza penetración súbita de una energía psíquica."
-    }
-  ],
-  "guidingQuestions": [
-    "¿Qué estás proyectando en la persona amada?",
-    "¿Es deseo o reconocimiento profundo?"
-  ],
-  "isEmergent": false
-}
-{
-  "symbol": "Pareja",
-  "category": "Relacional",
-  "mainDefinition": "La pareja simboliza el espejo dinámico donde el yo se confronta y se expande.",
-  "emotionalResonance": "Activa apego, conflicto, intimidad y miedo al abandono.",
-  "archetypalLayer": "Es el escenario donde se dramatizan vínculos primarios no resueltos.",
-  "transformativeDimension": "Puede conducir a integración o repetición inconsciente.",
-  "processAxis": "Encuentro, conflicto e individuación.",
-  "culturalComparative": [
-    {
-      "tradition": "Mitología mesoamericana",
-      "sourceContext": "Dualidad cósmica",
-      "meaning": "La creación surge de la complementariedad de opuestos."
-    },
-    {
-      "tradition": "Psicología profunda",
-      "sourceContext": "Jung",
-      "meaning": "La pareja activa proyecciones del inconsciente."
-    }
-  ],
-  "guidingQuestions": [
-    "¿Amas al otro o a la imagen que proyectas?",
-    "¿Qué herida se activa en el vínculo?"
-  ],
-  "isEmergent": false
-}
-{
-  "symbol": "Enfermedad",
-  "category": "Transformacion",
-  "mainDefinition": "La enfermedad puede simbolizar una ruptura del equilibrio psíquico y corporal que exige revisión interior.",
-  "emotionalResonance": "Vulnerabilidad, límite y posibilidad de cambio.",
-  "archetypalLayer": "La herida como llamada de conciencia.",
-  "transformativeDimension": "El cuerpo puede expresar conflictos que no han sido simbolizados.",
-  "processAxis": "Crisis y resignificación.",
-  "culturalComparative": [
-    {
-      "tradition": "Chevalier",
-      "sourceContext": "Entrada Enfermedad",
-      "meaning": "Alteración del orden que puede tener dimensión simbólica."
-    },
-    {
-      "tradition": "Psicosomática contemporánea",
-      "sourceContext": "Enfoque simbólico del cuerpo",
-      "meaning": "El cuerpo puede manifestar tensiones emocionales no elaboradas."
-    }
-  ],
-  "guidingQuestions": [
-    "¿Qué emoción no encuentra palabra?",
-    "¿Qué conflicto busca expresión?"
-  ],
-  "isEmergent": false
-}
