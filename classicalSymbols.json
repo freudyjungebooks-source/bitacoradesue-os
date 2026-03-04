@@ -2,68 +2,50 @@
   {
     "symbol": "Agua",
     "category": "Elemento",
-    "mainDefinition": "El agua representa el origen primordial de la vida, el flujo incesante de la conciencia y la capacidad de purificación.",
+    "mainDefinition": "El agua representa el origen primordial de la vida y el flujo de la conciencia.",
     "emotionalResonance": "Calma, fluidez y renovación.",
     "isEmergent": false
   },
   {
     "symbol": "Árbol",
     "category": "Naturaleza",
-    "mainDefinition": "Símbolo de la vida en evolución y la conexión entre raíces y expansión.",
+    "mainDefinition": "Símbolo de crecimiento y conexión entre raíces y expansión.",
     "emotionalResonance": "Seguridad y pertenencia.",
-    "isEmergent": false
-  },
-  {
-    "symbol": "Puente",
-    "category": "Transito",
-    "mainDefinition": "Representa el paso entre dos estados o realidades.",
-    "emotionalResonance": "Cambio y valentía.",
-    "isEmergent": false
-  },
-  {
-    "symbol": "Semilla",
-    "category": "Memoria",
-    "mainDefinition": "Simboliza el potencial latente y el inicio de un proceso.",
-    "emotionalResonance": "Paciencia y esperanza.",
-    "isEmergent": false
-  },
-  {
-    "symbol": "Espejo",
-    "category": "Arquetipo",
-    "mainDefinition": "Simboliza el autoconocimiento y la conciencia reflexiva.",
-    "emotionalResonance": "Confrontación o aceptación.",
     "isEmergent": false
   },
   {
     "symbol": "Amor",
     "category": "Relacional",
-    "mainDefinition": "El amor simboliza la fuerza de unión que transforma la identidad y confronta al ego.",
+    "mainDefinition": "El amor simboliza la fuerza que une y transforma la identidad.",
     "emotionalResonance": "Entrega, deseo y vulnerabilidad.",
     "processAxis": "Unión e integración",
-    "isEmergent": false
-  },
-  {
-    "symbol": "Cupido",
-    "category": "Mitologico",
-    "mainDefinition": "Representa el impulso súbito del deseo y la proyección inconsciente sobre el otro.",
-    "emotionalResonance": "Fascinación y pérdida momentánea de control.",
-    "processAxis": "Proyección",
-    "isEmergent": false
-  },
-  {
-    "symbol": "Pareja",
-    "category": "Relacional",
-    "mainDefinition": "La pareja simboliza el espejo donde emergen heridas, proyecciones y posibilidades de crecimiento.",
-    "emotionalResonance": "Apego, conflicto e intimidad.",
-    "processAxis": "Encuentro y diferenciación",
-    "isEmergent": false
-  },
-  {
-    "symbol": "Enfermedad",
-    "category": "Transformacion",
-    "mainDefinition": "Puede simbolizar una ruptura del equilibrio que exige revisión interior.",
-    "emotionalResonance": "Vulnerabilidad y transformación.",
-    "processAxis": "Crisis y resignificación",
+    "relacionEmocionCuerpo": {
+      "advertencia": "Este apartado no establece causalidad médica ni sustituye atención profesional. Es una invitación reflexiva.",
+      "dinamicaRelacional": [
+        "Encuentro entre autonomía y fusión.",
+        "Proyección de necesidades no resueltas.",
+        "Tensión entre deseo y miedo a la pérdida."
+      ],
+      "posiblesImpactosEmocionales": [
+        "Ansiedad ante incertidumbre afectiva.",
+        "Dependencia emocional.",
+        "Celos persistentes."
+      ],
+      "exploracionCorporalSimbolica": [
+        {
+          "zona": "Pecho",
+          "lectura": "Puede sentirse presión cuando hay miedo a perder."
+        },
+        {
+          "zona": "Estómago",
+          "lectura": "Puede activarse cuando hay dificultad para procesar lo que se vive."
+        },
+        {
+          "zona": "Garganta",
+          "lectura": "Puede tensarse cuando hay emociones no expresadas."
+        }
+      ]
+    },
     "isEmergent": false
   }
 ]
