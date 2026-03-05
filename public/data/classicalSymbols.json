@@ -1,14 +1,137 @@
 [
-{"symbol":"Agua","category":"Elemento","mainDefinition":"Principio de vida, fluidez y purificación.","culturalLayer":"En muchas cosmologías representa el origen del mundo.","archetypalLayer":"Imagen del inconsciente.","transformativeDimension":"Limpia y renueva.","processAxis":"Fluir.","emotionalResonance":"Calma o tormenta emocional.","related":["vida","inconsciente"],"isEmergent":false},
-
-{"symbol":"Aire","category":"Elemento","mainDefinition":"Movimiento invisible que sostiene la vida.","culturalLayer":"Aliento divino en muchas religiones.","archetypalLayer":"Pensamiento y libertad.","transformativeDimension":"Expansión mental.","processAxis":"Pensar.","emotionalResonance":"Ligereza.","related":["espiritu","mente"],"isEmergent":false},
-
-{"symbol":"Amor","category":"Relacional","mainDefinition":"Fuerza que une identidades.","culturalLayer":"En Grecia se expresa como Eros.","archetypalLayer":"Encuentro entre anima y animus.","transformativeDimension":"Revela lo inconsciente.","processAxis":"Atracción e integración.","emotionalResonance":"Entrega y vulnerabilidad.","related":["pareja","eros"],"isEmergent":false},
-
-{"symbol":"Ángel","category":"Espiritual","mainDefinition":"Mensajero entre lo divino y lo humano.","culturalLayer":"Presente en judaísmo, cristianismo e islam.","archetypalLayer":"Protección interior.","transformativeDimension":"Guía espiritual.","processAxis":"Orientar.","emotionalResonance":"Consuelo.","related":["espiritu","guia"],"isEmergent":false},
-
-{"symbol":"Árbol","category":"Naturaleza","mainDefinition":"Conexión entre cielo y tierra.","culturalLayer":"Árbol del mundo en muchas mitologías.","archetypalLayer":"Crecimiento del ser.","transformativeDimension":"Maduración.","processAxis":"Crecer.","emotionalResonance":"Estabilidad.","related":["raices","vida"],"isEmergent":false},
-
-{"symbol":"Alma","category":"Espiritual","mainDefinition":"Centro espiritual de la persona.","culturalLayer":"Esencia inmortal en muchas religiones.","archetypalLayer":"Interior profundo.","transformativeDimension":"Búsqueda de sentido.","processAxis":"Autoconocimiento.","emotionalResonance":"Profundidad existencial.","related":["espiritu","interior"],"isEmergent":false},
-
-{"symbol":"Ave","category":"Naturaleza","mainDefinition":"Símbolo de libertad y elevación.","culturalLayer":"Mensajeras divinas en muchas culturas.","archetypalLayer":"Espíritu liberado.","transformativeDimension":"Ascenso.","processAxis":"
+{
+"symbol":"Agua",
+"category":"Elemento",
+"mainDefinition":"Principio de vida, fluidez y purificación.",
+"culturalLayer":"En numerosas cosmogonías representa el origen del mundo.",
+"archetypalLayer":"Imagen del inconsciente profundo.",
+"transformativeDimension":"Disuelve estructuras rígidas.",
+"processAxis":"Fluir y adaptarse.",
+"emotionalResonance":"Calma o tormenta emocional.",
+"related":["vida","flujo","inconsciente"],
+"isEmergent":false
+},
+{
+"symbol":"Aire",
+"category":"Elemento",
+"mainDefinition":"Movimiento invisible que sostiene la vida.",
+"culturalLayer":"Asociado al aliento vital en muchas religiones.",
+"archetypalLayer":"Pensamiento y libertad.",
+"transformativeDimension":"Expansión mental.",
+"processAxis":"Imaginar y pensar.",
+"emotionalResonance":"Ligereza o dispersión.",
+"related":["espiritu","mente"],
+"isEmergent":false
+},
+{
+"symbol":"Amor",
+"category":"Relacional",
+"mainDefinition":"Fuerza que une identidades.",
+"culturalLayer":"En Grecia aparece como Eros.",
+"archetypalLayer":"Encuentro entre anima y animus.",
+"transformativeDimension":"Confronta al ego.",
+"processAxis":"Atracción e integración.",
+"emotionalResonance":"Entrega y vulnerabilidad.",
+"related":["pareja","eros"],
+"isEmergent":false
+},
+{
+"symbol":"Árbol",
+"category":"Naturaleza",
+"mainDefinition":"Conexión entre cielo y tierra.",
+"culturalLayer":"Árbol del mundo en múltiples mitologías.",
+"archetypalLayer":"Crecimiento del ser.",
+"transformativeDimension":"Maduración.",
+"processAxis":"Crecer desde la raíz.",
+"emotionalResonance":"Estabilidad.",
+"related":["raices","vida"],
+"isEmergent":false
+},
+{
+"symbol":"Alma",
+"category":"Espiritual",
+"mainDefinition":"Centro espiritual del ser humano.",
+"culturalLayer":"Esencia inmortal en muchas tradiciones.",
+"archetypalLayer":"Interior profundo.",
+"transformativeDimension":"Búsqueda de sentido.",
+"processAxis":"Autoconocimiento.",
+"emotionalResonance":"Profundidad.",
+"related":["espiritu","interior"],
+"isEmergent":false
+},
+{
+"symbol":"Camino",
+"category":"Proceso",
+"mainDefinition":"Representa el recorrido vital.",
+"culturalLayer":"Imagen central en peregrinaciones.",
+"archetypalLayer":"Viaje del héroe.",
+"transformativeDimension":"Aprendizaje continuo.",
+"processAxis":"Avanzar.",
+"emotionalResonance":"Esperanza o incertidumbre.",
+"related":["viaje","destino"],
+"isEmergent":false
+},
+{
+"symbol":"Corazón",
+"category":"Relacional",
+"mainDefinition":"Centro simbólico del afecto.",
+"culturalLayer":"Representa amor y compasión.",
+"archetypalLayer":"Centro emocional.",
+"transformativeDimension":"Apertura al otro.",
+"processAxis":"Sentir.",
+"emotionalResonance":"Ternura o dolor.",
+"related":["amor","emocion"],
+"isEmergent":false
+},
+{
+"symbol":"Cruz",
+"category":"Espiritual",
+"mainDefinition":"Encuentro de lo vertical y lo horizontal.",
+"culturalLayer":"Símbolo central del cristianismo.",
+"archetypalLayer":"Unión de cielo y tierra.",
+"transformativeDimension":"Sacrificio y renacimiento.",
+"processAxis":"Integración.",
+"emotionalResonance":"Redención.",
+"related":["espiritu","sacrificio"],
+"isEmergent":false
+},
+{
+"symbol":"Desierto",
+"category":"Espiritual",
+"mainDefinition":"Lugar de prueba y purificación.",
+"culturalLayer":"En textos bíblicos representa retiro espiritual.",
+"archetypalLayer":"Soledad transformadora.",
+"transformativeDimension":"Silencio interior.",
+"processAxis":"Purificación.",
+"emotionalResonance":"Vacío fértil.",
+"related":["silencio","retiro"],
+"isEmergent":false
+},
+{
+"symbol":"Enfermedad",
+"category":"Transformacion",
+"mainDefinition":"Ruptura del equilibrio vital.",
+"culturalLayer":"En diversas tradiciones se interpreta como llamado de cambio.",
+"archetypalLayer":"La herida que obliga a mirar dentro.",
+"transformativeDimension":"Invita a detenerse.",
+"processAxis":"Crisis y transformación.",
+"emotionalResonance":"Fragilidad.",
+"related":["cuerpo","crisis"],
+"isEmergent":false
+},
+{
+"symbol":"Espejo",
+"category":"Conciencia",
+"mainDefinition":"Símbolo de autoconocimiento.",
+"culturalLayer":"Representa verdad y revelación.",
+"archetypalLayer":"Encuentro con la sombra.",
+"transformativeDimension":"Integración del yo.",
+"processAxis":"Reflexión.",
+"emotionalResonance":"Confrontación.",
+"related":["identidad","sombra"],
+"isEmergent":false
+},
+{
+"symbol":"Estrella",
+"category":"Cosmico",
+"mainDefinition":"Luz que
