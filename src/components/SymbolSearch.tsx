@@ -1,90 +1,96 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
-const SymbolSearch = () => {
+interface SymbolItem {
+  symbol: string;
+  category: string;
+  mainDefinition: string;
+  culturalLayer?: string;
+  archetypalLayer?: string;
+  transformativeDimension?: string;
+  processAxis?: string;
+  emotionalResonance?: string;
+  guidingQuestions?: string[];
+  related?: string[];
+  isEmergent?: boolean;
+}
+
+export default function SymbolSearch() {
+  const [symbols, setSymbols] = useState<SymbolItem[]>([]);
   const [query, setQuery] = useState("");
-  const [symbols, setSymbols] = useState<any[]>([]);
-  const [result, setResult] = useState<any>(null);
+  const [selected, setSelected] = useState<SymbolItem | null>(null);
 
   useEffect(() => {
-    fetch("/classicalSymbols.json")
-      .then(res => res.json())
-      .then(data => setSymbols(data));
+    fetch("/data/classicalSymbols.json")
+      .then((res) => res.json())
+      .then((data) => setSymbols(data))
+      .catch((err) => console.error("Error cargando símbolos:", err));
   }, []);
 
   const handleSearch = () => {
     const found = symbols.find(
-      s => s.symbol.toLowerCase() === query.toLowerCase()
+      (s) => s.symbol.toLowerCase() === query.toLowerCase()
     );
-    setResult(found || null);
+    setSelected(found || null);
   };
 
   return (
-    <div style={{ padding: 20 }}>
-      <h2>Exploración simbólica</h2>
+    <div style={{ padding: "2rem" }}>
+      <h2>Exploración Simbólica</h2>
 
       <input
         type="text"
         placeholder="Escribe un símbolo..."
         value={query}
-        onChange={e => setQuery(e.target.value)}
-        style={{ marginRight: 10 }}
+        onChange={(e) => setQuery(e.target.value)}
+        style={{ padding: "0.5rem", marginRight: "0.5rem" }}
       />
 
-      <button onClick={handleSearch}>Buscar</button>
+      <button onClick={handleSearch} style={{ padding: "0.5rem" }}>
+        Buscar
+      </button>
 
-      {result && (
-        <div style={{ marginTop: 30 }}>
-          <h3>{result.symbol}</h3>
-          <p><strong>Categoría:</strong> {result.category}</p>
-          <p>{result.mainDefinition}</p>
-          <p><strong>Resonancia emocional:</strong> {result.emotionalResonance}</p>
+      {selected && (
+        <div style={{ marginTop: "2rem", borderTop: "1px solid #ccc", paddingTop: "1rem" }}>
+          <h3>{selected.symbol}</h3>
+          <p><strong>Categoría:</strong> {selected.category}</p>
+          <p>{selected.mainDefinition}</p>
 
-          {result.processAxis && (
-            <p><strong>Eje del proceso:</strong> {result.processAxis}</p>
+          {selected.culturalLayer && (
+            <p><strong>Capa cultural:</strong> {selected.culturalLayer}</p>
           )}
 
-          {result.relacionEmocionCuerpo && (
-            <div style={{ marginTop: 25, padding: 15, border: "1px solid #ccc" }}>
-              <h4>Relación – Emoción – Cuerpo</h4>
+          {selected.archetypalLayer && (
+            <p><strong>Capa arquetipal:</strong> {selected.archetypalLayer}</p>
+          )}
 
-              <p style={{ fontStyle: "italic" }}>
-                {result.relacionEmocionCuerpo.advertencia}
-              </p>
+          {selected.transformativeDimension && (
+            <p><strong>Dimensión transformativa:</strong> {selected.transformativeDimension}</p>
+          )}
 
-              <h5>Dinámica relacional</h5>
+          {selected.processAxis && (
+            <p><strong>Eje del proceso:</strong> {selected.processAxis}</p>
+          )}
+
+          {selected.emotionalResonance && (
+            <p><strong>Resonancia emocional:</strong> {selected.emotionalResonance}</p>
+          )}
+
+          {selected.guidingQuestions && (
+            <div>
+              <strong>Preguntas guía:</strong>
               <ul>
-                {result.relacionEmocionCuerpo.dinamicaRelacional.map(
-                  (item: string, index: number) => (
-                    <li key={index}>{item}</li>
-                  )
-                )}
-              </ul>
-
-              <h5>Impacto emocional posible</h5>
-              <ul>
-                {result.relacionEmocionCuerpo.posiblesImpactosEmocionales.map(
-                  (item: string, index: number) => (
-                    <li key={index}>{item}</li>
-                  )
-                )}
-              </ul>
-
-              <h5>Exploración corporal simbólica</h5>
-              <ul>
-                {result.relacionEmocionCuerpo.exploracionCorporalSimbolica.map(
-                  (item: any, index: number) => (
-                    <li key={index}>
-                      <strong>{item.zona}:</strong> {item.lectura}
-                    </li>
-                  )
-                )}
+                {selected.guidingQuestions.map((q, i) => (
+                  <li key={i}>{q}</li>
+                ))}
               </ul>
             </div>
+          )}
+
+          {selected.related && (
+            <p><strong>Relacionado con:</strong> {selected.related.join(", ")}</p>
           )}
         </div>
       )}
     </div>
   );
-};
-
-export default SymbolSearch;
+}
