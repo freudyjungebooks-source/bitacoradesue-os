@@ -1,23 +1,183 @@
+[
 {
-  "symbol": "Amor",
-  "category": "Relacional",
-  "mainDefinition": "El amor simboliza la fuerza de atracción que une, transforma y expande la identidad más allá del yo individual.",
-  "culturalLayer": "En múltiples culturas el amor aparece como principio creador que une opuestos y genera vida.",
-  "archetypalLayer": "En psicología profunda representa el encuentro entre anima y animus y el reconocimiento del otro interior.",
-  "transformativeDimension": "El amor confronta al ego, obliga a madurar y revela zonas inconscientes del ser.",
-  "processAxis": "Atracción, proyección, reconocimiento e integración.",
-  "emotionalResonance": "Despierta deseo, vulnerabilidad, entrega y temor a la pérdida.",
-  "guidingQuestions": [
-    "¿Amas al otro o a la imagen que proyectas?",
-    "¿Qué parte de ti se revela en la relación?",
-    "¿Tu amor busca poseer o comprender?"
-  ],
-  "related": [
-    "pareja",
-    "deseo",
-    "union",
-    "eros",
-    "relacion"
-  ],
-  "isEmergent": false
+"symbol":"Agua",
+"category":"Elemento",
+"mainDefinition":"El agua simboliza el origen de la vida y el flujo de la conciencia.",
+"culturalLayer":"En múltiples tradiciones representa el caos primordial, la purificación y el nacimiento.",
+"archetypalLayer":"Imagen del inconsciente profundo.",
+"transformativeDimension":"Disuelve lo rígido y permite renovación.",
+"processAxis":"Fluir, adaptarse, limpiar.",
+"emotionalResonance":"Calma, profundidad emocional, renovación.",
+"guidingQuestions":[
+"¿Qué emoción necesita fluir?",
+"¿Qué necesita limpieza interior?"
+],
+"related":["emocion","inconsciente","flujo"],
+"isEmergent":false
+},
+
+{
+"symbol":"Amor",
+"category":"Relacional",
+"mainDefinition":"Fuerza que une identidades y transforma la experiencia humana.",
+"culturalLayer":"En mitologías aparece como Eros, principio creador.",
+"archetypalLayer":"Encuentro entre anima y animus.",
+"transformativeDimension":"Revela zonas inconscientes del ser.",
+"processAxis":"Atracción, proyección, integración.",
+"emotionalResonance":"Deseo, entrega, vulnerabilidad.",
+"guidingQuestions":[
+"¿Amas al otro o a tu proyección?",
+"¿Qué revela el otro de ti?"
+],
+"related":["pareja","eros","union"],
+"isEmergent":false
+},
+
+{
+"symbol":"Árbol",
+"category":"Naturaleza",
+"mainDefinition":"Símbolo universal de crecimiento y conexión entre tierra y cielo.",
+"culturalLayer":"Aparece como Árbol del Mundo en muchas mitologías.",
+"archetypalLayer":"Raíces (origen), tronco (identidad), ramas (expansión).",
+"transformativeDimension":"Expresa maduración y continuidad.",
+"processAxis":"Crecer desde las raíces.",
+"emotionalResonance":"Estabilidad y pertenencia.",
+"guidingQuestions":[
+"¿Qué raíces sostienen tu vida?",
+"¿Qué parte de ti quiere crecer?"
+],
+"related":["vida","raices","crecimiento"],
+"isEmergent":false
+},
+
+{
+"symbol":"Camino",
+"category":"Proceso",
+"mainDefinition":"Representa el recorrido vital del ser humano.",
+"culturalLayer":"Aparece en peregrinaciones y relatos iniciáticos.",
+"archetypalLayer":"Viaje del héroe.",
+"transformativeDimension":"Cada tramo implica aprendizaje.",
+"processAxis":"Búsqueda de sentido.",
+"emotionalResonance":"Esperanza e incertidumbre.",
+"guidingQuestions":[
+"¿Hacia dónde caminas?",
+"¿Qué etapa atraviesas?"
+],
+"related":["viaje","destino"],
+"isEmergent":false
+},
+
+{
+"symbol":"Corazón",
+"category":"Relacional",
+"mainDefinition":"Centro simbólico de emoción y afecto.",
+"culturalLayer":"Representa amor y compasión en muchas tradiciones.",
+"archetypalLayer":"Lugar del encuentro emocional.",
+"transformativeDimension":"Conecta razón y sentimiento.",
+"processAxis":"Abrirse o cerrarse al vínculo.",
+"emotionalResonance":"Amor, dolor, ternura.",
+"guidingQuestions":[
+"¿Tu corazón está abierto o protegido?",
+"¿Qué emoción habita en él?"
+],
+"related":["amor","emocion"],
+"isEmergent":false
+},
+
+{
+"symbol":"Cupido",
+"category":"Mitologico",
+"mainDefinition":"Representa el impulso repentino del enamoramiento.",
+"culturalLayer":"Dios romano del amor.",
+"archetypalLayer":"Proyección del deseo.",
+"transformativeDimension":"Rompe defensas racionales.",
+"processAxis":"Deseo súbito.",
+"emotionalResonance":"Fascinación y vulnerabilidad.",
+"guidingQuestions":[
+"¿Es amor o proyección?"
+],
+"related":["amor","eros"],
+"isEmergent":false
+},
+
+{
+"symbol":"Enfermedad",
+"category":"Transformacion",
+"mainDefinition":"Interrupción del equilibrio que obliga a revisar la vida.",
+"culturalLayer":"En varias culturas se interpreta como señal o prueba.",
+"archetypalLayer":"La herida como llamada de conciencia.",
+"transformativeDimension":"Puede impulsar cambio profundo.",
+"processAxis":"Crisis y resignificación.",
+"emotionalResonance":"Fragilidad y búsqueda de sentido.",
+"guidingQuestions":[
+"¿Qué necesita atención en tu vida?",
+"¿Qué ritmo debes detener?"
+],
+"related":["cuerpo","crisis","transformacion"],
+"isEmergent":false
+},
+
+{
+"symbol":"Espejo",
+"category":"Conciencia",
+"mainDefinition":"Símbolo de autoconocimiento.",
+"culturalLayer":"Representa verdad y revelación.",
+"archetypalLayer":"Encuentro con la sombra.",
+"transformativeDimension":"Permite integrar lo negado.",
+"processAxis":"Reflexión interior.",
+"emotionalResonance":"Aceptación o confrontación.",
+"guidingQuestions":[
+"¿Qué parte de ti no miras?"
+],
+"related":["identidad","sombra"],
+"isEmergent":false
+},
+
+{
+"symbol":"Fuego",
+"category":"Elemento",
+"mainDefinition":"Símbolo de energía transformadora.",
+"culturalLayer":"Presente en rituales de purificación.",
+"archetypalLayer":"Fuerza vital.",
+"transformativeDimension":"Destruye para renovar.",
+"processAxis":"Transformación.",
+"emotionalResonance":"Pasión e intensidad.",
+"guidingQuestions":[
+"¿Qué energía se está despertando?"
+],
+"related":["energia","pasion"],
+"isEmergent":false
+},
+
+{
+"symbol":"Puente",
+"category":"Transito",
+"mainDefinition":"Representa transición entre estados.",
+"culturalLayer":"Cruce entre mundos.",
+"archetypalLayer":"Umbral.",
+"transformativeDimension":"Implica decisión.",
+"processAxis":"Cambio.",
+"emotionalResonance":"Valentía.",
+"guidingQuestions":[
+"¿Qué estás cruzando?"
+],
+"related":["transicion"],
+"isEmergent":false
+},
+
+{
+"symbol":"Semilla",
+"category":"Potencial",
+"mainDefinition":"Representa el inicio de un proceso.",
+"culturalLayer":"Asociada a ciclos agrícolas.",
+"archetypalLayer":"Germen interior.",
+"transformativeDimension":"Necesita tiempo para germinar.",
+"processAxis":"Desarrollo.",
+"emotionalResonance":"Esperanza.",
+"guidingQuestions":[
+"¿Qué está germinando en tu vida?"
+],
+"related":["inicio","crecimiento"],
+"isEmergent":false
 }
+]
