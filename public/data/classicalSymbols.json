@@ -2,182 +2,265 @@
 {
 "symbol":"Agua",
 "category":"Elemento",
-"mainDefinition":"El agua simboliza el origen de la vida y el flujo de la conciencia.",
-"culturalLayer":"En múltiples tradiciones representa el caos primordial, la purificación y el nacimiento.",
+"mainDefinition":"Principio de vida, fluidez y purificación.",
+"culturalLayer":"En numerosas culturas representa el origen del mundo y la regeneración.",
 "archetypalLayer":"Imagen del inconsciente profundo.",
-"transformativeDimension":"Disuelve lo rígido y permite renovación.",
-"processAxis":"Fluir, adaptarse, limpiar.",
-"emotionalResonance":"Calma, profundidad emocional, renovación.",
-"guidingQuestions":[
-"¿Qué emoción necesita fluir?",
-"¿Qué necesita limpieza interior?"
-],
-"related":["emocion","inconsciente","flujo"],
+"transformativeDimension":"Disuelve estructuras rígidas y permite renovación.",
+"processAxis":"Fluir, limpiar, adaptarse.",
+"emotionalResonance":"Calma, profundidad emocional.",
+"related":["inconsciente","vida","flujo"],
 "isEmergent":false
 },
-
+{
+"symbol":"Aire",
+"category":"Elemento",
+"mainDefinition":"Símbolo de espíritu, pensamiento y movimiento invisible.",
+"culturalLayer":"En tradiciones espirituales representa el aliento vital.",
+"archetypalLayer":"Intelecto y libertad.",
+"transformativeDimension":"Expansión mental.",
+"processAxis":"Pensar, imaginar.",
+"emotionalResonance":"Ligereza o dispersión.",
+"related":["espiritu","pensamiento"],
+"isEmergent":false
+},
 {
 "symbol":"Amor",
 "category":"Relacional",
-"mainDefinition":"Fuerza que une identidades y transforma la experiencia humana.",
-"culturalLayer":"En mitologías aparece como Eros, principio creador.",
+"mainDefinition":"Fuerza de unión entre identidades.",
+"culturalLayer":"En Grecia se expresa como Eros.",
 "archetypalLayer":"Encuentro entre anima y animus.",
-"transformativeDimension":"Revela zonas inconscientes del ser.",
+"transformativeDimension":"Confronta al ego.",
 "processAxis":"Atracción, proyección, integración.",
-"emotionalResonance":"Deseo, entrega, vulnerabilidad.",
-"guidingQuestions":[
-"¿Amas al otro o a tu proyección?",
-"¿Qué revela el otro de ti?"
-],
-"related":["pareja","eros","union"],
+"emotionalResonance":"Entrega y vulnerabilidad.",
+"related":["pareja","union","eros"],
 "isEmergent":false
 },
-
 {
 "symbol":"Árbol",
 "category":"Naturaleza",
-"mainDefinition":"Símbolo universal de crecimiento y conexión entre tierra y cielo.",
-"culturalLayer":"Aparece como Árbol del Mundo en muchas mitologías.",
-"archetypalLayer":"Raíces (origen), tronco (identidad), ramas (expansión).",
-"transformativeDimension":"Expresa maduración y continuidad.",
-"processAxis":"Crecer desde las raíces.",
-"emotionalResonance":"Estabilidad y pertenencia.",
-"guidingQuestions":[
-"¿Qué raíces sostienen tu vida?",
-"¿Qué parte de ti quiere crecer?"
-],
-"related":["vida","raices","crecimiento"],
+"mainDefinition":"Símbolo universal de crecimiento y conexión.",
+"culturalLayer":"Árbol del mundo en muchas mitologías.",
+"archetypalLayer":"Raíces, tronco y ramas del ser.",
+"transformativeDimension":"Desarrollo gradual.",
+"processAxis":"Crecer desde el origen.",
+"emotionalResonance":"Estabilidad.",
+"related":["vida","raices","linaje"],
 "isEmergent":false
 },
-
+{
+"symbol":"Alma",
+"category":"Espiritual",
+"mainDefinition":"Centro espiritual de la persona.",
+"culturalLayer":"En muchas tradiciones es la esencia inmortal.",
+"archetypalLayer":"Interioridad profunda.",
+"transformativeDimension":"Búsqueda de sentido.",
+"processAxis":"Autoconocimiento.",
+"emotionalResonance":"Profundidad existencial.",
+"related":["espiritu","interior"],
+"isEmergent":false
+},
 {
 "symbol":"Camino",
 "category":"Proceso",
-"mainDefinition":"Representa el recorrido vital del ser humano.",
-"culturalLayer":"Aparece en peregrinaciones y relatos iniciáticos.",
+"mainDefinition":"Representa el recorrido vital.",
+"culturalLayer":"Imagen central en peregrinaciones.",
 "archetypalLayer":"Viaje del héroe.",
-"transformativeDimension":"Cada tramo implica aprendizaje.",
-"processAxis":"Búsqueda de sentido.",
-"emotionalResonance":"Esperanza e incertidumbre.",
-"guidingQuestions":[
-"¿Hacia dónde caminas?",
-"¿Qué etapa atraviesas?"
-],
+"transformativeDimension":"Aprendizaje continuo.",
+"processAxis":"Avance.",
+"emotionalResonance":"Esperanza o incertidumbre.",
 "related":["viaje","destino"],
 "isEmergent":false
 },
-
 {
 "symbol":"Corazón",
 "category":"Relacional",
-"mainDefinition":"Centro simbólico de emoción y afecto.",
-"culturalLayer":"Representa amor y compasión en muchas tradiciones.",
-"archetypalLayer":"Lugar del encuentro emocional.",
-"transformativeDimension":"Conecta razón y sentimiento.",
-"processAxis":"Abrirse o cerrarse al vínculo.",
-"emotionalResonance":"Amor, dolor, ternura.",
-"guidingQuestions":[
-"¿Tu corazón está abierto o protegido?",
-"¿Qué emoción habita en él?"
-],
+"mainDefinition":"Centro simbólico del afecto.",
+"culturalLayer":"Representa amor y compasión.",
+"archetypalLayer":"Centro emocional.",
+"transformativeDimension":"Apertura al otro.",
+"processAxis":"Sentir.",
+"emotionalResonance":"Ternura o dolor.",
 "related":["amor","emocion"],
 "isEmergent":false
 },
-
 {
-"symbol":"Cupido",
-"category":"Mitologico",
-"mainDefinition":"Representa el impulso repentino del enamoramiento.",
-"culturalLayer":"Dios romano del amor.",
-"archetypalLayer":"Proyección del deseo.",
-"transformativeDimension":"Rompe defensas racionales.",
-"processAxis":"Deseo súbito.",
-"emotionalResonance":"Fascinación y vulnerabilidad.",
-"guidingQuestions":[
-"¿Es amor o proyección?"
-],
-"related":["amor","eros"],
+"symbol":"Cielo",
+"category":"Cosmico",
+"mainDefinition":"Espacio superior asociado a trascendencia.",
+"culturalLayer":"En religiones representa el dominio divino.",
+"archetypalLayer":"Elevación espiritual.",
+"transformativeDimension":"Aspiración.",
+"processAxis":"Ascenso.",
+"emotionalResonance":"Esperanza.",
+"related":["espiritu","luz"],
 "isEmergent":false
 },
-
+{
+"symbol":"Cruz",
+"category":"Espiritual",
+"mainDefinition":"Encuentro de lo vertical y lo horizontal.",
+"culturalLayer":"Símbolo central del cristianismo.",
+"archetypalLayer":"Unión de cielo y tierra.",
+"transformativeDimension":"Sacrificio y renacimiento.",
+"processAxis":"Integración.",
+"emotionalResonance":"Redención.",
+"related":["sacrificio","espiritu"],
+"isEmergent":false
+},
+{
+"symbol":"Desierto",
+"category":"Espiritual",
+"mainDefinition":"Lugar simbólico de prueba y purificación.",
+"culturalLayer":"En textos bíblicos representa retiro espiritual.",
+"archetypalLayer":"Soledad transformadora.",
+"transformativeDimension":"Silencio interior.",
+"processAxis":"Purificación.",
+"emotionalResonance":"Vacío fértil.",
+"related":["silencio","retiro"],
+"isEmergent":false
+},
 {
 "symbol":"Enfermedad",
 "category":"Transformacion",
-"mainDefinition":"Interrupción del equilibrio que obliga a revisar la vida.",
-"culturalLayer":"En varias culturas se interpreta como señal o prueba.",
-"archetypalLayer":"La herida como llamada de conciencia.",
-"transformativeDimension":"Puede impulsar cambio profundo.",
-"processAxis":"Crisis y resignificación.",
-"emotionalResonance":"Fragilidad y búsqueda de sentido.",
-"guidingQuestions":[
-"¿Qué necesita atención en tu vida?",
-"¿Qué ritmo debes detener?"
-],
-"related":["cuerpo","crisis","transformacion"],
+"mainDefinition":"Ruptura del equilibrio vital.",
+"culturalLayer":"En algunas tradiciones se interpreta como señal de cambio.",
+"archetypalLayer":"La herida que obliga a mirar dentro.",
+"transformativeDimension":"Invita a detenerse.",
+"processAxis":"Crisis y transformación.",
+"emotionalResonance":"Fragilidad.",
+"related":["cuerpo","crisis"],
 "isEmergent":false
 },
-
 {
 "symbol":"Espejo",
 "category":"Conciencia",
 "mainDefinition":"Símbolo de autoconocimiento.",
 "culturalLayer":"Representa verdad y revelación.",
 "archetypalLayer":"Encuentro con la sombra.",
-"transformativeDimension":"Permite integrar lo negado.",
-"processAxis":"Reflexión interior.",
-"emotionalResonance":"Aceptación o confrontación.",
-"guidingQuestions":[
-"¿Qué parte de ti no miras?"
-],
+"transformativeDimension":"Integración del yo.",
+"processAxis":"Reflexión.",
+"emotionalResonance":"Confrontación.",
 "related":["identidad","sombra"],
 "isEmergent":false
 },
-
+{
+"symbol":"Estrella",
+"category":"Cosmico",
+"mainDefinition":"Luz que guía en la oscuridad.",
+"culturalLayer":"Usada como símbolo de destino.",
+"archetypalLayer":"Orientación interior.",
+"transformativeDimension":"Inspiración.",
+"processAxis":"Guía.",
+"emotionalResonance":"Esperanza.",
+"related":["destino","luz"],
+"isEmergent":false
+},
 {
 "symbol":"Fuego",
 "category":"Elemento",
-"mainDefinition":"Símbolo de energía transformadora.",
-"culturalLayer":"Presente en rituales de purificación.",
-"archetypalLayer":"Fuerza vital.",
-"transformativeDimension":"Destruye para renovar.",
-"processAxis":"Transformación.",
-"emotionalResonance":"Pasión e intensidad.",
-"guidingQuestions":[
-"¿Qué energía se está despertando?"
-],
+"mainDefinition":"Energía de transformación.",
+"culturalLayer":"Elemento central en rituales.",
+"archetypalLayer":"Pasión vital.",
+"transformativeDimension":"Purifica destruyendo.",
+"processAxis":"Cambio.",
+"emotionalResonance":"Intensidad.",
 "related":["energia","pasion"],
 "isEmergent":false
 },
-
+{
+"symbol":"Flor",
+"category":"Naturaleza",
+"mainDefinition":"Belleza efímera y plenitud.",
+"culturalLayer":"Símbolo de amor y renovación.",
+"archetypalLayer":"Apertura del ser.",
+"transformativeDimension":"Florecimiento.",
+"processAxis":"Desarrollo.",
+"emotionalResonance":"Alegría.",
+"related":["vida","belleza"],
+"isEmergent":false
+},
+{
+"symbol":"Luz",
+"category":"Cosmico",
+"mainDefinition":"Conocimiento y claridad.",
+"culturalLayer":"Asociada a lo divino.",
+"archetypalLayer":"Conciencia.",
+"transformativeDimension":"Revelación.",
+"processAxis":"Iluminación.",
+"emotionalResonance":"Claridad.",
+"related":["verdad","conocimiento"],
+"isEmergent":false
+},
+{
+"symbol":"Luna",
+"category":"Cosmico",
+"mainDefinition":"Ciclos, feminidad y cambio.",
+"culturalLayer":"Central en calendarios antiguos.",
+"archetypalLayer":"Ritmo emocional.",
+"transformativeDimension":"Transformación cíclica.",
+"processAxis":"Renovación.",
+"emotionalResonance":"Intuición.",
+"related":["ciclos","feminino"],
+"isEmergent":false
+},
+{
+"symbol":"Montaña",
+"category":"Naturaleza",
+"mainDefinition":"Elevación espiritual.",
+"culturalLayer":"Lugar de revelaciones en muchas tradiciones.",
+"archetypalLayer":"Ascenso del espíritu.",
+"transformativeDimension":"Superación.",
+"processAxis":"Esfuerzo.",
+"emotionalResonance":"Grandeza.",
+"related":["altura","espiritu"],
+"isEmergent":false
+},
 {
 "symbol":"Puente",
 "category":"Transito",
-"mainDefinition":"Representa transición entre estados.",
+"mainDefinition":"Paso entre dos estados.",
 "culturalLayer":"Cruce entre mundos.",
 "archetypalLayer":"Umbral.",
-"transformativeDimension":"Implica decisión.",
-"processAxis":"Cambio.",
-"emotionalResonance":"Valentía.",
-"guidingQuestions":[
-"¿Qué estás cruzando?"
-],
-"related":["transicion"],
+"transformativeDimension":"Cambio consciente.",
+"processAxis":"Transición.",
+"emotionalResonance":"Decisión.",
+"related":["cambio","umbral"],
 "isEmergent":false
 },
-
 {
 "symbol":"Semilla",
 "category":"Potencial",
-"mainDefinition":"Representa el inicio de un proceso.",
-"culturalLayer":"Asociada a ciclos agrícolas.",
-"archetypalLayer":"Germen interior.",
-"transformativeDimension":"Necesita tiempo para germinar.",
-"processAxis":"Desarrollo.",
+"mainDefinition":"Inicio de todo proceso.",
+"culturalLayer":"Base de ciclos agrícolas.",
+"archetypalLayer":"Potencial oculto.",
+"transformativeDimension":"Germinación.",
+"processAxis":"Nacimiento.",
 "emotionalResonance":"Esperanza.",
-"guidingQuestions":[
-"¿Qué está germinando en tu vida?"
-],
 "related":["inicio","crecimiento"],
+"isEmergent":false
+},
+{
+"symbol":"Sol",
+"category":"Cosmico",
+"mainDefinition":"Fuente de vida y energía.",
+"culturalLayer":"Centro de múltiples religiones solares.",
+"archetypalLayer":"Conciencia activa.",
+"transformativeDimension":"Vitalidad.",
+"processAxis":"Expansión.",
+"emotionalResonance":"Fuerza.",
+"related":["energia","vida"],
+"isEmergent":false
+},
+{
+"symbol":"Tiempo",
+"category":"Existencial",
+"mainDefinition":"Flujo irreversible de la vida.",
+"culturalLayer":"En mitología aparece como Cronos.",
+"archetypalLayer":"Conciencia de finitud.",
+"transformativeDimension":"Maduración.",
+"processAxis":"Cambio continuo.",
+"emotionalResonance":"Urgencia o sabiduría.",
+"related":["ciclo","historia"],
 "isEmergent":false
 }
 ]
