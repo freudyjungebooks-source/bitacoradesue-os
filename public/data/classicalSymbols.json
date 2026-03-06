@@ -1,57 +1,567 @@
 [
-{"symbol":"Agua","category":"Elemento","mainDefinition":"Principio de vida, purificación y flujo emocional.","culturalLayer":"En mitologías antiguas representa el origen del mundo.","archetypalLayer":"Imagen del inconsciente profundo.","transformativeDimension":"Renueva y limpia lo antiguo.","processAxis":"Fluir y adaptarse.","emotionalResonance":"Calma o tormenta emocional","related":["inconsciente","vida","flujo"],"isEmergent":false},
-
-{"symbol":"Aire","category":"Elemento","mainDefinition":"Movimiento invisible asociado al espíritu y pensamiento.","culturalLayer":"Representa el aliento vital en muchas tradiciones.","archetypalLayer":"Libertad y mente.","transformativeDimension":"Expansión mental.","processAxis":"Pensar e imaginar.","emotionalResonance":"Ligereza o dispersión","related":["espiritu","pensamiento"],"isEmergent":false},
-
-{"symbol":"Alma","category":"Espiritual","mainDefinition":"Centro interior de la persona.","culturalLayer":"Esencia espiritual presente en múltiples religiones.","archetypalLayer":"Interioridad profunda.","transformativeDimension":"Búsqueda de sentido.","processAxis":"Autoconocimiento.","emotionalResonance":"Profundidad existencial","related":["espiritu","interior"],"isEmergent":false},
-
-{"symbol":"Amor","category":"Relacional","mainDefinition":"Fuerza de unión entre identidades.","culturalLayer":"En Grecia aparece como Eros.","archetypalLayer":"Encuentro entre anima y animus.","transformativeDimension":"Transforma al ego.","processAxis":"Atracción e integración.","emotionalResonance":"Entrega y vulnerabilidad","related":["pareja","union","eros"],"isEmergent":false},
-
-{"symbol":"Ángel","category":"Espiritual","mainDefinition":"Mensajero entre lo divino y lo humano.","culturalLayer":"Figura presente en tradiciones abrahámicas.","archetypalLayer":"Guía espiritual.","transformativeDimension":"Protección y orientación.","processAxis":"Revelación.","emotionalResonance":"Consuelo","related":["espiritu","guia"],"isEmergent":false},
-
-{"symbol":"Árbol","category":"Naturaleza","mainDefinition":"Crecimiento y conexión entre cielo y tierra.","culturalLayer":"Árbol del mundo en muchas culturas.","archetypalLayer":"Raíces, tronco y ramas del ser.","transformativeDimension":"Desarrollo gradual.","processAxis":"Crecer desde el origen.","emotionalResonance":"Estabilidad","related":["vida","raices","linaje"],"isEmergent":false},
-
-{"symbol":"Ave","category":"Naturaleza","mainDefinition":"Símbolo de libertad y elevación.","culturalLayer":"Mensajero entre mundos en mitologías.","archetypalLayer":"Espíritu que se eleva.","transformativeDimension":"Superación de límites.","processAxis":"Ascender.","emotionalResonance":"Ligereza","related":["cielo","libertad"],"isEmergent":false},
-
-{"symbol":"Barco","category":"Viaje","mainDefinition":"Travesía entre estados de conciencia.","culturalLayer":"Presente en mitologías del viaje del alma.","archetypalLayer":"Paso entre mundos.","transformativeDimension":"Transición vital.","processAxis":"Viajar.","emotionalResonance":"Aventura","related":["mar","viaje"],"isEmergent":false},
-
-{"symbol":"Bosque","category":"Naturaleza","mainDefinition":"Espacio de misterio y exploración interior.","culturalLayer":"Lugar iniciático en cuentos y mitos.","archetypalLayer":"Encuentro con lo desconocido.","transformativeDimension":"Descubrimiento del yo.","processAxis":"Explorar.","emotionalResonance":"Misterio","related":["sombra","naturaleza"],"isEmergent":false},
-
-{"symbol":"Camino","category":"Proceso","mainDefinition":"Recorrido vital.","culturalLayer":"Presente en peregrinaciones.","archetypalLayer":"Viaje del héroe.","transformativeDimension":"Aprendizaje continuo.","processAxis":"Avance.","emotionalResonance":"Esperanza","related":["viaje","destino"],"isEmergent":false},
-
-{"symbol":"Cielo","category":"Cosmico","mainDefinition":"Espacio superior asociado a trascendencia.","culturalLayer":"Dominio de lo divino.","archetypalLayer":"Elevación espiritual.","transformativeDimension":"Aspiración.","processAxis":"Ascenso.","emotionalResonance":"Esperanza","related":["espiritu","luz"],"isEmergent":false},
-
-{"symbol":"Corazón","category":"Relacional","mainDefinition":"Centro simbólico del afecto.","culturalLayer":"Representa amor y compasión.","archetypalLayer":"Centro emocional.","transformativeDimension":"Apertura al otro.","processAxis":"Sentir.","emotionalResonance":"Ternura","related":["amor","emocion"],"isEmergent":false},
-
-{"symbol":"Cruz","category":"Espiritual","mainDefinition":"Encuentro de lo vertical y lo horizontal.","culturalLayer":"Símbolo central del cristianismo.","archetypalLayer":"Unión de cielo y tierra.","transformativeDimension":"Sacrificio y renacimiento.","processAxis":"Integración.","emotionalResonance":"Redención","related":["sacrificio","espiritu"],"isEmergent":false},
-
-{"symbol":"Desierto","category":"Espiritual","mainDefinition":"Lugar simbólico de prueba y purificación.","culturalLayer":"En textos bíblicos representa retiro espiritual.","archetypalLayer":"Soledad transformadora.","transformativeDimension":"Silencio interior.","processAxis":"Purificación.","emotionalResonance":"Vacío fértil","related":["silencio","retiro"],"isEmergent":false},
-
-{"symbol":"Dragón","category":"Mitico","mainDefinition":"Fuerza primitiva que guarda un tesoro.","culturalLayer":"Presente en mitologías de oriente y occidente.","archetypalLayer":"La sombra poderosa.","transformativeDimension":"Superación del miedo.","processAxis":"Confrontación.","emotionalResonance":"Temor y poder","related":["sombra","tesoro"],"isEmergent":false},
-
-{"symbol":"Enfermedad","category":"Transformacion","mainDefinition":"Ruptura del equilibrio vital que obliga a detenerse.","culturalLayer":"En algunas tradiciones se interpreta como señal de cambio.","archetypalLayer":"La herida que invita a la conciencia.","transformativeDimension":"Redirección interior.","processAxis":"Crisis y transformación.","emotionalResonance":"Fragilidad","related":["cuerpo","crisis"],"isEmergent":false},
-
-{"symbol":"Espejo","category":"Conciencia","mainDefinition":"Símbolo de autoconocimiento.","culturalLayer":"Representa verdad y revelación.","archetypalLayer":"Encuentro con la sombra.","transformativeDimension":"Integración del yo.","processAxis":"Reflexión.","emotionalResonance":"Confrontación","related":["identidad","sombra"],"isEmergent":false},
-
-{"symbol":"Estrella","category":"Cosmico","mainDefinition":"Luz que guía en la oscuridad.","culturalLayer":"Usada como símbolo de destino.","archetypalLayer":"Orientación interior.","transformativeDimension":"Inspiración.","processAxis":"Guía.","emotionalResonance":"Esperanza","related":["destino","luz"],"isEmergent":false},
-
-{"symbol":"Fuego","category":"Elemento","mainDefinition":"Energía de transformación.","culturalLayer":"Elemento central en rituales.","archetypalLayer":"Pasión vital.","transformativeDimension":"Purifica destruyendo.","processAxis":"Cambio.","emotionalResonance":"Intensidad","related":["energia","pasion"],"isEmergent":false},
-
-{"symbol":"Flor","category":"Naturaleza","mainDefinition":"Belleza efímera y plenitud.","culturalLayer":"Símbolo de amor y renovación.","archetypalLayer":"Apertura del ser.","transformativeDimension":"Florecimiento.","processAxis":"Desarrollo.","emotionalResonance":"Alegría","related":["vida","belleza"],"isEmergent":false},
-
-{"symbol":"Héroe","category":"Arquetipo","mainDefinition":"Figura que emprende un viaje de transformación.","culturalLayer":"Presente en mitos universales.","archetypalLayer":"Viaje descrito por Joseph Campbell.","transformativeDimension":"Superación de pruebas.","processAxis":"Iniciación.","emotionalResonance":"Coraje","related":["viaje","destino"],"isEmergent":false},
-
-{"symbol":"Isla","category":"Espacio","mainDefinition":"Lugar aislado que simboliza retiro.","culturalLayer":"Espacio de revelación en muchos relatos.","archetypalLayer":"Centro interior.","transformativeDimension":"Aislamiento fértil.","processAxis":"Retiro.","emotionalResonance":"Soledad","related":["mar","retiro"],"isEmergent":false},
-
-{"symbol":"Jardín","category":"Naturaleza","mainDefinition":"Espacio cultivado de armonía.","culturalLayer":"Imagen del paraíso.","archetypalLayer":"Orden interior.","transformativeDimension":"Cuidado del alma.","processAxis":"Cultivar.","emotionalResonance":"Paz","related":["naturaleza","vida"],"isEmergent":false},
-
-{"symbol":"Laberinto","category":"Arquetipo","mainDefinition":"Camino complejo hacia el centro.","culturalLayer":"Mito de Teseo.","archetypalLayer":"Búsqueda interior.","transformativeDimension":"Orientación espiritual.","processAxis":"Perderse para encontrarse.","emotionalResonance":"Confusión","related":["busqueda","centro"],"isEmergent":false},
-
-{"symbol":"Luna","category":"Cosmico","mainDefinition":"Ciclos, feminidad y cambio.","culturalLayer":"Central en calendarios antiguos.","archetypalLayer":"Ritmo emocional.","transformativeDimension":"Transformación cíclica.","processAxis":"Renovación.","emotionalResonance":"Intuición","related":["ciclos","femenino"],"isEmergent":false},
-
-{"symbol":"Luz","category":"Cosmico","mainDefinition":"Conocimiento y claridad.","culturalLayer":"Asociada a lo divino.","archetypalLayer":"Conciencia.","transformativeDimension":"Revelación.","processAxis":"Iluminación.","emotionalResonance":"Claridad","related":["verdad","conocimiento"],"isEmergent":false},
-
-{"symbol":"Mar","category":"Naturaleza","mainDefinition":"Inmensidad del inconsciente.","culturalLayer":"Espacio de viaje mítico.","archetypalLayer":"Profundidad psíquica.","transformativeDimension":"Exploración interior.","processAxis":"Sumergirse.","emotionalResonance":"Asombro","related":["agua","inconsciente"],"isEmergent":false},
-
-{"symbol":"Montaña","category":"Naturaleza","mainDefinition":"Elevación espiritual.","culturalLayer":"Lugar de revelaciones.","archetypalLayer":"Ascenso del espíritu.","transformativeDimension":"Superación.","processAxis":"Escalar.","emotionalResonance":"Grandeza","related":["altura","espiritu"],"isEmergent":false}
+{
+"symbol":"Agua",
+"category":"Elemento",
+"mainDefinition":"Principio de vida, purificación y flujo emocional.",
+"culturalLayer":"En mitologías antiguas representa el origen del mundo.",
+"archetypalLayer":"Imagen del inconsciente profundo.",
+"transformativeDimension":"Renueva y limpia lo antiguo.",
+"processAxis":"Fluir y adaptarse.",
+"emotionalResonance":"Calma o tormenta emocional",
+"related":["inconsciente","vida","flujo"],
+"isEmergent":false
+},
+{
+"symbol":"Aire",
+"category":"Elemento",
+"mainDefinition":"Movimiento invisible asociado al espíritu.",
+"culturalLayer":"Representa el aliento vital en muchas tradiciones.",
+"archetypalLayer":"Libertad y mente.",
+"transformativeDimension":"Expansión mental.",
+"processAxis":"Pensar e imaginar.",
+"emotionalResonance":"Ligereza o dispersión",
+"related":["espiritu","pensamiento"],
+"isEmergent":false
+},
+{
+"symbol":"Alma",
+"category":"Espiritual",
+"mainDefinition":"Centro interior de la persona.",
+"culturalLayer":"Esencia espiritual en muchas religiones.",
+"archetypalLayer":"Interioridad profunda.",
+"transformativeDimension":"Búsqueda de sentido.",
+"processAxis":"Autoconocimiento.",
+"emotionalResonance":"Profundidad existencial",
+"related":["espiritu","interior"],
+"isEmergent":false
+},
+{
+"symbol":"Amor",
+"category":"Relacional",
+"mainDefinition":"Fuerza de unión entre identidades.",
+"culturalLayer":"En Grecia aparece como Eros.",
+"archetypalLayer":"Encuentro entre anima y animus.",
+"transformativeDimension":"Transforma al ego.",
+"processAxis":"Atracción e integración.",
+"emotionalResonance":"Entrega y vulnerabilidad",
+"related":["pareja","union","eros"],
+"isEmergent":false
+},
+{
+"symbol":"Ángel",
+"category":"Espiritual",
+"mainDefinition":"Mensajero entre lo divino y lo humano.",
+"culturalLayer":"Figura presente en tradiciones abrahámicas.",
+"archetypalLayer":"Guía espiritual.",
+"transformativeDimension":"Protección y orientación.",
+"processAxis":"Revelación.",
+"emotionalResonance":"Consuelo",
+"related":["espiritu","guia"],
+"isEmergent":false
+},
+{
+"symbol":"Árbol",
+"category":"Naturaleza",
+"mainDefinition":"Símbolo universal de crecimiento.",
+"culturalLayer":"Árbol del mundo en muchas culturas.",
+"archetypalLayer":"Raíces, tronco y ramas del ser.",
+"transformativeDimension":"Desarrollo gradual.",
+"processAxis":"Crecer desde el origen.",
+"emotionalResonance":"Estabilidad",
+"related":["vida","raices","linaje"],
+"isEmergent":false
+},
+{
+"symbol":"Ave",
+"category":"Naturaleza",
+"mainDefinition":"Símbolo de libertad y elevación.",
+"culturalLayer":"Mensajero entre mundos en mitologías.",
+"archetypalLayer":"Espíritu que se eleva.",
+"transformativeDimension":"Superación de límites.",
+"processAxis":"Ascender.",
+"emotionalResonance":"Ligereza",
+"related":["cielo","libertad"],
+"isEmergent":false
+},
+{
+"symbol":"Barco",
+"category":"Viaje",
+"mainDefinition":"Travesía entre estados de conciencia.",
+"culturalLayer":"Presente en mitologías del viaje del alma.",
+"archetypalLayer":"Paso entre mundos.",
+"transformativeDimension":"Transición vital.",
+"processAxis":"Viajar.",
+"emotionalResonance":"Aventura",
+"related":["mar","viaje"],
+"isEmergent":false
+},
+{
+"symbol":"Bosque",
+"category":"Naturaleza",
+"mainDefinition":"Espacio de misterio y exploración interior.",
+"culturalLayer":"Lugar iniciático en cuentos y mitos.",
+"archetypalLayer":"Encuentro con lo desconocido.",
+"transformativeDimension":"Descubrimiento del yo.",
+"processAxis":"Explorar.",
+"emotionalResonance":"Misterio",
+"related":["sombra","naturaleza"],
+"isEmergent":false
+},
+{
+"symbol":"Camino",
+"category":"Proceso",
+"mainDefinition":"Recorrido vital.",
+"culturalLayer":"Presente en peregrinaciones.",
+"archetypalLayer":"Viaje del héroe.",
+"transformativeDimension":"Aprendizaje continuo.",
+"processAxis":"Avance.",
+"emotionalResonance":"Esperanza",
+"related":["viaje","destino"],
+"isEmergent":false
+},
+{
+"symbol":"Cielo",
+"category":"Cosmico",
+"mainDefinition":"Espacio superior asociado a trascendencia.",
+"culturalLayer":"Dominio de lo divino.",
+"archetypalLayer":"Elevación espiritual.",
+"transformativeDimension":"Aspiración.",
+"processAxis":"Ascenso.",
+"emotionalResonance":"Esperanza",
+"related":["espiritu","luz"],
+"isEmergent":false
+},
+{
+"symbol":"Corazón",
+"category":"Relacional",
+"mainDefinition":"Centro simbólico del afecto.",
+"culturalLayer":"Representa amor y compasión.",
+"archetypalLayer":"Centro emocional.",
+"transformativeDimension":"Apertura al otro.",
+"processAxis":"Sentir.",
+"emotionalResonance":"Ternura",
+"related":["amor","emocion"],
+"isEmergent":false
+},
+{
+"symbol":"Cruz",
+"category":"Espiritual",
+"mainDefinition":"Encuentro de lo vertical y lo horizontal.",
+"culturalLayer":"Símbolo central del cristianismo.",
+"archetypalLayer":"Unión de cielo y tierra.",
+"transformativeDimension":"Sacrificio y renacimiento.",
+"processAxis":"Integración.",
+"emotionalResonance":"Redención",
+"related":["sacrificio","espiritu"],
+"isEmergent":false
+},
+{
+"symbol":"Desierto",
+"category":"Espiritual",
+"mainDefinition":"Lugar simbólico de prueba y purificación.",
+"culturalLayer":"Representa retiro espiritual.",
+"archetypalLayer":"Soledad transformadora.",
+"transformativeDimension":"Silencio interior.",
+"processAxis":"Purificación.",
+"emotionalResonance":"Vacío fértil",
+"related":["silencio","retiro"],
+"isEmergent":false
+},
+{
+"symbol":"Dragón",
+"category":"Mitico",
+"mainDefinition":"Fuerza primitiva que guarda un tesoro.",
+"culturalLayer":"Presente en mitologías de oriente y occidente.",
+"archetypalLayer":"La sombra poderosa.",
+"transformativeDimension":"Superación del miedo.",
+"processAxis":"Confrontación.",
+"emotionalResonance":"Temor y poder",
+"related":["sombra","tesoro"],
+"isEmergent":false
+},
+{
+"symbol":"Enfermedad",
+"category":"Transformacion",
+"mainDefinition":"Ruptura del equilibrio vital que obliga a detenerse.",
+"culturalLayer":"En algunas tradiciones es señal de cambio.",
+"archetypalLayer":"La herida que invita a la conciencia.",
+"transformativeDimension":"Redirección interior.",
+"processAxis":"Crisis y transformación.",
+"emotionalResonance":"Fragilidad",
+"related":["cuerpo","crisis"],
+"isEmergent":false
+},
+{
+"symbol":"Espejo",
+"category":"Conciencia",
+"mainDefinition":"Símbolo de autoconocimiento.",
+"culturalLayer":"Representa verdad y revelación.",
+"archetypalLayer":"Encuentro con la sombra.",
+"transformativeDimension":"Integración del yo.",
+"processAxis":"Reflexión.",
+"emotionalResonance":"Confrontación",
+"related":["identidad","sombra"],
+"isEmergent":false
+},
+{
+"symbol":"Estrella",
+"category":"Cosmico",
+"mainDefinition":"Luz que guía en la oscuridad.",
+"culturalLayer":"Símbolo de destino.",
+"archetypalLayer":"Orientación interior.",
+"transformativeDimension":"Inspiración.",
+"processAxis":"Guía.",
+"emotionalResonance":"Esperanza",
+"related":["destino","luz"],
+"isEmergent":false
+},
+{
+"symbol":"Fuego",
+"category":"Elemento",
+"mainDefinition":"Energía de transformación.",
+"culturalLayer":"Elemento central en rituales.",
+"archetypalLayer":"Pasión vital.",
+"transformativeDimension":"Purifica destruyendo.",
+"processAxis":"Cambio.",
+"emotionalResonance":"Intensidad",
+"related":["energia","pasion"],
+"isEmergent":false
+},
+{
+"symbol":"Flor",
+"category":"Naturaleza",
+"mainDefinition":"Belleza efímera y plenitud.",
+"culturalLayer":"Símbolo de amor y renovación.",
+"archetypalLayer":"Apertura del ser.",
+"transformativeDimension":"Florecimiento.",
+"processAxis":"Desarrollo.",
+"emotionalResonance":"Alegría",
+"related":["vida","belleza"],
+"isEmergent":false
+},
+{
+"symbol":"Héroe",
+"category":"Arquetipo",
+"mainDefinition":"Figura que emprende un viaje de transformación.",
+"culturalLayer":"Presente en mitos universales.",
+"archetypalLayer":"Viaje descrito por Joseph Campbell.",
+"transformativeDimension":"Superación de pruebas.",
+"processAxis":"Iniciación.",
+"emotionalResonance":"Coraje",
+"related":["viaje","destino"],
+"isEmergent":false
+},
+{
+"symbol":"Isla",
+"category":"Espacio",
+"mainDefinition":"Lugar aislado que simboliza retiro.",
+"culturalLayer":"Espacio de revelación en relatos.",
+"archetypalLayer":"Centro interior.",
+"transformativeDimension":"Aislamiento fértil.",
+"processAxis":"Retiro.",
+"emotionalResonance":"Soledad",
+"related":["mar","retiro"],
+"isEmergent":false
+},
+{
+"symbol":"Jardín",
+"category":"Naturaleza",
+"mainDefinition":"Espacio cultivado de armonía.",
+"culturalLayer":"Imagen del paraíso.",
+"archetypalLayer":"Orden interior.",
+"transformativeDimension":"Cuidado del alma.",
+"processAxis":"Cultivar.",
+"emotionalResonance":"Paz",
+"related":["naturaleza","vida"],
+"isEmergent":false
+},
+{
+"symbol":"Laberinto",
+"category":"Arquetipo",
+"mainDefinition":"Camino complejo hacia el centro.",
+"culturalLayer":"Mito de Teseo.",
+"archetypalLayer":"Búsqueda interior.",
+"transformativeDimension":"Orientación espiritual.",
+"processAxis":"Perderse para encontrarse.",
+"emotionalResonance":"Confusión",
+"related":["busqueda","centro"],
+"isEmergent":false
+},
+{
+"symbol":"Luna",
+"category":"Cosmico",
+"mainDefinition":"Ciclos, feminidad y cambio.",
+"culturalLayer":"Central en calendarios antiguos.",
+"archetypalLayer":"Ritmo emocional.",
+"transformativeDimension":"Transformación cíclica.",
+"processAxis":"Renovación.",
+"emotionalResonance":"Intuición",
+"related":["ciclos","femenino"],
+"isEmergent":false
+}
+  ,
+  {
+"symbol":"Mar",
+"category":"Naturaleza",
+"mainDefinition":"Inmensidad simbólica del inconsciente.",
+"culturalLayer":"Presente en mitologías como origen y destino.",
+"archetypalLayer":"Profundidad psíquica.",
+"transformativeDimension":"Exploración interior.",
+"processAxis":"Sumergirse.",
+"emotionalResonance":"Asombro",
+"related":["agua","inconsciente"],
+"isEmergent":false
+},
+{
+"symbol":"Montaña",
+"category":"Naturaleza",
+"mainDefinition":"Elevación espiritual y desafío.",
+"culturalLayer":"Lugar de revelación en muchas tradiciones.",
+"archetypalLayer":"Ascenso del espíritu.",
+"transformativeDimension":"Superación.",
+"processAxis":"Escalar.",
+"emotionalResonance":"Grandeza",
+"related":["altura","espiritu"],
+"isEmergent":false
+},
+{
+"symbol":"Noche",
+"category":"Cosmico",
+"mainDefinition":"Territorio simbólico de los sueños.",
+"culturalLayer":"Momento de revelación en mitos.",
+"archetypalLayer":"Inconsciente activo.",
+"transformativeDimension":"Gestación interior.",
+"processAxis":"Descender.",
+"emotionalResonance":"Misterio",
+"related":["sueño","oscuridad"],
+"isEmergent":false
+},
+{
+"symbol":"Océano",
+"category":"Naturaleza",
+"mainDefinition":"Inconsciente colectivo.",
+"culturalLayer":"Origen de la vida en mitologías.",
+"archetypalLayer":"Profundidad psíquica.",
+"transformativeDimension":"Exploración interior.",
+"processAxis":"Sumergirse.",
+"emotionalResonance":"Asombro",
+"related":["agua","profundidad"],
+"isEmergent":false
+},
+{
+"symbol":"Ojo",
+"category":"Conciencia",
+"mainDefinition":"Percepción y vigilancia.",
+"culturalLayer":"El ojo divino aparece en múltiples culturas.",
+"archetypalLayer":"Conciencia observadora.",
+"transformativeDimension":"Despertar interior.",
+"processAxis":"Ver.",
+"emotionalResonance":"Claridad",
+"related":["vision","conciencia"],
+"isEmergent":false
+},
+{
+"symbol":"Puerta",
+"category":"Transito",
+"mainDefinition":"Umbral entre dos realidades.",
+"culturalLayer":"Entrada a espacios sagrados.",
+"archetypalLayer":"Inicio de transformación.",
+"transformativeDimension":"Paso hacia lo desconocido.",
+"processAxis":"Cruzar.",
+"emotionalResonance":"Expectativa",
+"related":["umbral","cambio"],
+"isEmergent":false
+},
+{
+"symbol":"Puente",
+"category":"Transito",
+"mainDefinition":"Conexión entre dos estados.",
+"culturalLayer":"Cruce entre mundos en relatos míticos.",
+"archetypalLayer":"Transición del yo.",
+"transformativeDimension":"Cambio consciente.",
+"processAxis":"Atravesar.",
+"emotionalResonance":"Decisión",
+"related":["transicion","camino"],
+"isEmergent":false
+},
+{
+"symbol":"Rey",
+"category":"Arquetipo",
+"mainDefinition":"Principio de autoridad.",
+"culturalLayer":"Figura central de orden social.",
+"archetypalLayer":"Centro regulador del psiquismo.",
+"transformativeDimension":"Responsabilidad.",
+"processAxis":"Gobernar.",
+"emotionalResonance":"Poder",
+"related":["autoridad","orden"],
+"isEmergent":false
+},
+{
+"symbol":"Reina",
+"category":"Arquetipo",
+"mainDefinition":"Principio de sabiduría y cuidado.",
+"culturalLayer":"Figura materna y soberana.",
+"archetypalLayer":"Dimensión receptiva del poder.",
+"transformativeDimension":"Protección.",
+"processAxis":"Cuidar.",
+"emotionalResonance":"Serenidad",
+"related":["sabiduria","madre"],
+"isEmergent":false
+},
+{
+"symbol":"Río",
+"category":"Naturaleza",
+"mainDefinition":"Flujo continuo de la vida.",
+"culturalLayer":"Símbolo del paso del tiempo.",
+"archetypalLayer":"Movimiento psíquico.",
+"transformativeDimension":"Cambio constante.",
+"processAxis":"Fluir.",
+"emotionalResonance":"Melancolía",
+"related":["agua","tiempo"],
+"isEmergent":false
+},
+{
+"symbol":"Rosa",
+"category":"Naturaleza",
+"mainDefinition":"Belleza y amor espiritual.",
+"culturalLayer":"Símbolo místico.",
+"archetypalLayer":"Centro del corazón.",
+"transformativeDimension":"Apertura afectiva.",
+"processAxis":"Florecer.",
+"emotionalResonance":"Ternura",
+"related":["amor","flor"],
+"isEmergent":false
+},
+{
+"symbol":"Sombra",
+"category":"Psicologico",
+"mainDefinition":"Aspectos reprimidos del yo.",
+"culturalLayer":"Concepto desarrollado por Jung.",
+"archetypalLayer":"Parte desconocida del ser.",
+"transformativeDimension":"Integración psíquica.",
+"processAxis":"Reconocer.",
+"emotionalResonance":"Incomodidad",
+"related":["inconsciente","yo"],
+"isEmergent":false
+},
+{
+"symbol":"Semilla",
+"category":"Potencial",
+"mainDefinition":"Inicio de todo proceso.",
+"culturalLayer":"Base de ciclos agrícolas.",
+"archetypalLayer":"Potencial oculto.",
+"transformativeDimension":"Germinación.",
+"processAxis":"Nacer.",
+"emotionalResonance":"Esperanza",
+"related":["inicio","crecimiento"],
+"isEmergent":false
+},
+{
+"symbol":"Serpiente",
+"category":"Mitico",
+"mainDefinition":"Fuerza de transformación.",
+"culturalLayer":"Presente en mitologías del mundo.",
+"archetypalLayer":"Energía vital.",
+"transformativeDimension":"Cambio profundo.",
+"processAxis":"Mudanza.",
+"emotionalResonance":"Temor",
+"related":["transformacion","vida"],
+"isEmergent":false
+},
+{
+"symbol":"Sol",
+"category":"Cosmico",
+"mainDefinition":"Fuente de vida.",
+"culturalLayer":"Centro de religiones solares.",
+"archetypalLayer":"Conciencia activa.",
+"transformativeDimension":"Vitalidad.",
+"processAxis":"Irradiar.",
+"emotionalResonance":"Fuerza",
+"related":["energia","vida"],
+"isEmergent":false
+},
+{
+"symbol":"Sueño",
+"category":"Psicologico",
+"mainDefinition":"Lenguaje simbólico del inconsciente.",
+"culturalLayer":"Estudiado desde Artemidoro hasta Freud.",
+"archetypalLayer":"Comunicación interior.",
+"transformativeDimension":"Revelación psíquica.",
+"processAxis":"Interpretar.",
+"emotionalResonance":"Intriga",
+"related":["inconsciente","imagen"],
+"isEmergent":false
+},
+{
+"symbol":"Templo",
+"category":"Espiritual",
+"mainDefinition":"Espacio sagrado.",
+"culturalLayer":"Centro ritual de religiones.",
+"archetypalLayer":"Centro interior.",
+"transformativeDimension":"Silencio espiritual.",
+"processAxis":"Contemplar.",
+"emotionalResonance":"Reverencia",
+"related":["sagrado","espiritu"],
+"isEmergent":false
+},
+{
+"symbol":"Tesoro",
+"category":"Arquetipo",
+"mainDefinition":"Valor oculto por descubrir.",
+"culturalLayer":"Presente en relatos iniciáticos.",
+"archetypalLayer":"Potencial interior.",
+"transformativeDimension":"Realización personal.",
+"processAxis":"Buscar.",
+"emotionalResonance":"Deseo",
+"related":["valor","descubrimiento"],
+"isEmergent":false
+},
+{
+"symbol":"Tiempo",
+"category":"Existencial",
+"mainDefinition":"Flujo irreversible de la vida.",
+"culturalLayer":"Representado por Cronos.",
+"archetypalLayer":"Conciencia de finitud.",
+"transformativeDimension":"Maduración.",
+"processAxis":"Cambiar.",
+"emotionalResonance":"Urgencia",
+"related":["ciclo","historia"],
+"isEmergent":false
+},
+{
+"symbol":"Torre",
+"category":"Arquitectonico",
+"mainDefinition":"Elevación aislada.",
+"culturalLayer":"Lugar de vigilancia.",
+"archetypalLayer":"Distancia del mundo.",
+"transformativeDimension":"Observación interior.",
+"processAxis":"Elevarse.",
+"emotionalResonance":"Soledad",
+"related":["altura","aislamiento"],
+"isEmergent":false
+},
+{
+"symbol":"Valle",
+"category":"Naturaleza",
+"mainDefinition":"Espacio fértil entre montañas.",
+"culturalLayer":"Lugar de refugio.",
+"archetypalLayer":"Descenso necesario.",
+"transformativeDimension":"Humildad.",
+"processAxis":"Descender.",
+"emotionalResonance":"Calma",
+"related":["tierra","refugio"],
+"isEmergent":false
+},
+{
+"symbol":"Viento",
+"category":"Elemento",
+"mainDefinition":"Movimiento invisible.",
+"culturalLayer":"Asociado al espíritu.",
+"archetypalLayer":"Cambio repentino.",
+"transformativeDimension":"Renovación.",
+"processAxis":"Mover.",
+"emotionalResonance":"Inquietud",
+"related":["aire","movimiento"],
+"isEmergent":false
+}
 ]
