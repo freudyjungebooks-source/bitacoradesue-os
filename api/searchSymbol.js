@@ -1,35 +1,41 @@
-searchSymbol(query: string) {
+import symbols from "../public/data/classicalSymbols.json";
+
+export default function searchSymbol(query) {
+
   if (!query) return null;
 
   const q = query.toLowerCase().trim();
 
   // 1. Coincidencia exacta
-  const exact = this.symbols.find(
-    (s: any) => s.symbol.toLowerCase() === q
+  const exact = symbols.find(
+    (s) => s.symbol.toLowerCase() === q
   );
+
   if (exact) return exact;
 
-  // 2. Coincidencia por related
-  const relatedMatch = this.symbols.find(
-    (s: any) =>
+  // 2. Coincidencia por palabras relacionadas
+  const relatedMatch = symbols.find(
+    (s) =>
       s.related &&
-      s.related.some((r: string) =>
+      s.related.some((r) =>
         r.toLowerCase().includes(q)
       )
   );
+
   if (relatedMatch) return relatedMatch;
 
   // 3. Coincidencia por categoría
-  const categoryMatch = this.symbols.find(
-    (s: any) =>
+  const categoryMatch = symbols.find(
+    (s) =>
       s.category &&
       s.category.toLowerCase().includes(q)
   );
+
   if (categoryMatch) return categoryMatch;
 
-  // 4. Coincidencia por eje de proceso (atlas transversal)
-  const processMatch = this.symbols.filter(
-    (s: any) =>
+  // 4. Coincidencia por eje de proceso
+  const processMatch = symbols.filter(
+    (s) =>
       s.processAxis &&
       s.processAxis.toLowerCase().includes(q)
   );
@@ -38,9 +44,9 @@ searchSymbol(query: string) {
     return {
       symbol: "Eje simbólico relacionado",
       definicionAcademica:
-        "La palabra ingresada no corresponde a un símbolo específico, pero pertenece a un eje de transformación presente en el atlas.",
+        "La palabra ingresada no corresponde a un símbolo específico pero pertenece a un proceso simbólico presente en el atlas.",
       resonanciaEmocional:
-        "Explora los siguientes símbolos vinculados a este proceso.",
+        "Explora los símbolos vinculados a este eje de transformación.",
       category: "Eje",
       relatedSymbols: processMatch
     };
