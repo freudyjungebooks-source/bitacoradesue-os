@@ -1,89 +1,96 @@
 import React, { useEffect, useState } from "react";
-import ForceGraph2D from "react-force-graph-2d";
+import symbols from "./public/data/classicalSymbols.json";
 
-const SymbolGraph = () => {
-  const [data, setData] = useState({ nodes: [], links: [] });
+interface SymbolGraphProps {
+  symbol: any;
+}
+
+const SymbolGraph: React.FC<SymbolGraphProps> = ({ symbol }) => {
+
+  const [nodes, setNodes] = useState<any[]>([]);
+  const [links, setLinks] = useState<any[]>([]);
 
   useEffect(() => {
-    fetch("/data/classicalSymbols.json")
-      .then(res => res.json())
-      .then(symbols => {
 
-        const nodes: any[] = [];
-        const links: any[] = [];
+    if (!symbol) return;
 
-        const addedTraditions = new Set<string>();
-        const addedProcess = new Set<string>();
+    const mainSymbol = symbol.symbol;
 
-        symbols.forEach((symbol: any) => {
+    const related = symbols.filter((s: any) =>
+      symbol.related &&
+      symbol.related.includes(s.symbol)
+    );
 
-          // Nodo símbolo
-          nodes.push({
-            id: symbol.symbol,
-            type: "symbol"
-          });
+    const nodeList: any[] = [];
+    const linkList: any[] = [];
 
-          // Nodo eje de proceso
-          if (symbol.processAxis && !addedProcess.has(symbol.processAxis)) {
-            nodes.push({
-              id: symbol.processAxis,
-              type: "process"
-            });
-            addedProcess.add(symbol.processAxis);
-          }
+    nodeList.push({
+      id: mainSymbol,
+      type: "center"
+    });
 
-          if (symbol.processAxis) {
-            links.push({
-              source: symbol.symbol,
-              target: symbol.processAxis
-            });
-          }
+    related.forEach((r: any) => {
 
-          // Nodo tradiciones culturales
-          symbol.culturalComparative?.forEach((c: any) => {
-
-            if (!addedTraditions.has(c.tradition)) {
-              nodes.push({
-                id: c.tradition,
-                type: "tradition"
-              });
-              addedTraditions.add(c.tradition);
-            }
-
-            links.push({
-              source: symbol.symbol,
-              target: c.tradition
-            });
-
-          });
-
-        });
-
-        setData({ nodes, links });
+      nodeList.push({
+        id: r.symbol,
+        type: "related"
       });
-  }, []);
+
+      linkList.push({
+        source: mainSymbol,
+        target: r.symbol
+      });
+
+    });
+
+    setNodes(nodeList);
+    setLinks(linkList);
+
+  }, [symbol]);
 
   return (
-    <div style={{ height: "600px", border: "1px solid #ccc", marginTop: 20 }}>
-      <ForceGraph2D
-        graphData={data}
-        nodeCanvasObject={(node: any, ctx, globalScale) => {
-          const label = node.id;
-          const fontSize = 12 / globalScale;
-          ctx.font = `${fontSize}px Sans-Serif`;
 
-          if (node.type === "symbol") ctx.fillStyle = "#1e293b";
-          if (node.type === "process") ctx.fillStyle = "#047857";
-          if (node.type === "tradition") ctx.fillStyle = "#7c3aed";
+    <div style={{ marginTop: 40 }}>
 
-          ctx.beginPath();
-          ctx.arc(node.x, node.y, 5, 0, 2 * Math.PI);
-          ctx.fill();
+      <h3>Constelación simbólica</h3>
 
-          ctx.fillStyle = "#000";
-          ctx.fillText(label, node.x + 8, node.y + 4);
-        }}
-      />
+      <div style={{ marginTop: 20 }}>
+
+        {nodes.map((n, i) => (
+
+          <div
+            key={i}
+            style={{
+              padding: "8px",
+              border: "1px solid black",
+              borderRadius: "10px",
+              margin: "5px",
+              display: "inline-block"
+            }}
+          >
+            {n.id}
+          </div>
+
+        ))}
+
+      </div>
+
+      <div style={{ marginTop: 20 }}>
+
+        <h4>Conexiones</h4>
+
+        {links.map((l, i) => (
+
+          <div key={i}>
+
+            {l.source} → {l.target}
+
+          </div>
+
+        ))}
+
+      </div>
+
     </div>
   );
 };
