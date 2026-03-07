@@ -6,14 +6,14 @@ export default function searchSymbol(query) {
 
   const q = query.toLowerCase().trim();
 
-  // 1. Coincidencia exacta
+  // 1️⃣ Coincidencia exacta
   const exact = symbols.find(
     (s) => s.symbol.toLowerCase() === q
   );
 
   if (exact) return exact;
 
-  // 2. Coincidencia por palabras relacionadas
+  // 2️⃣ Coincidencia por palabras relacionadas
   const relatedMatch = symbols.find(
     (s) =>
       s.related &&
@@ -24,7 +24,7 @@ export default function searchSymbol(query) {
 
   if (relatedMatch) return relatedMatch;
 
-  // 3. Coincidencia por categoría
+  // 3️⃣ Coincidencia por categoría
   const categoryMatch = symbols.find(
     (s) =>
       s.category &&
@@ -33,7 +33,7 @@ export default function searchSymbol(query) {
 
   if (categoryMatch) return categoryMatch;
 
-  // 4. Coincidencia por eje de proceso
+  // 4️⃣ Coincidencia por eje de proceso (constelación simbólica)
   const processMatch = symbols.filter(
     (s) =>
       s.processAxis &&
