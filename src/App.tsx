@@ -1,49 +1,80 @@
 import React, { useState } from "react";
-import SymbolSearch from "./components/SymbolSearch";
+
+import Welcome from "./components/Welcome";
+import DiccionarioSimbolosScreen from "./components/DiccionarioSimbolosScreen";
+import DreamForm from "./components/DreamForm";
+import DreamList from "./components/DreamList";
+import PersonalDictionary from "./components/PersonalDictionary";
 import SymbolGraph from "./SymbolGraph";
 
 function App() {
 
-  const [selectedSymbol, setSelectedSymbol] = useState<any | null>(null);
-  const [showSearch, setShowSearch] = useState(false);
-
-  const handleSymbolSelect = (symbol: any) => {
-    setSelectedSymbol(symbol);
-  };
+  const [screen, setScreen] = useState("inicio");
 
   return (
-    <div style={{ padding: 20 }}>
 
-      <h1>Atlas Simbólico</h1>
+    <div style={{fontFamily:"serif", minHeight:"100vh", background:"#fafafa"}}>
 
-      <button
-        onClick={() => setShowSearch(true)}
+      {/* MENÚ PRINCIPAL */}
+      <nav
         style={{
-          padding: "10px 20px",
-          borderRadius: "20px",
-          border: "1px solid black",
-          cursor: "pointer"
+          display:"flex",
+          gap:"18px",
+          padding:"20px",
+          borderBottom:"1px solid #eaeaea",
+          flexWrap:"wrap",
+          justifyContent:"center",
+          background:"white"
         }}
       >
-        Buscar símbolo
-      </button>
 
-      {showSearch && (
-        <SymbolSearch
-          onClose={() => setShowSearch(false)}
-          onAddWord={() => {}}
-          onSymbolSelect={handleSymbolSelect}
-        />
-      )}
+        <button onClick={()=>setScreen("inicio")}>
+          inicio
+        </button>
 
-      <div style={{ marginTop: 40 }}>
-        {selectedSymbol && (
-          <SymbolGraph symbol={selectedSymbol} />
+        <button onClick={()=>setScreen("diccionario")}>
+          diccionario simbólico
+        </button>
+
+        <button onClick={()=>setScreen("suenos")}>
+          bitácora de sueños
+        </button>
+
+        <button onClick={()=>setScreen("personal")}>
+          diccionario personal
+        </button>
+
+        <button onClick={()=>setScreen("mapa")}>
+          atlas simbólico
+        </button>
+
+      </nav>
+
+      {/* CONTENIDO PRINCIPAL */}
+
+      <div style={{padding:"40px"}}>
+
+        {screen === "inicio" && <Welcome />}
+
+        {screen === "diccionario" && <DiccionarioSimbolosScreen />}
+
+        {screen === "suenos" && (
+          <>
+            <DreamForm />
+            <DreamList />
+          </>
         )}
+
+        {screen === "personal" && <PersonalDictionary />}
+
+        {screen === "mapa" && <SymbolGraph />}
+
       </div>
 
     </div>
+
   );
+
 }
 
 export default App;
