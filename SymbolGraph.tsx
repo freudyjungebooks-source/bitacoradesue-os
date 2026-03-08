@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import symbols from "./public/data/classicalSymbols.json";
 
 interface Node {
   id: string;
@@ -17,12 +16,23 @@ interface Props {
 
 const SymbolGraph: React.FC<Props> = ({ symbol }) => {
 
+  const [symbols, setSymbols] = useState<any[]>([]);
   const [nodes, setNodes] = useState<Node[]>([]);
   const [links, setLinks] = useState<Link[]>([]);
 
   useEffect(() => {
 
-    if (!symbol) return;
+    fetch("/data/classicalSymbols.json")
+      .then(res => res.json())
+      .then(data => {
+        setSymbols(data);
+      });
+
+  }, []);
+
+  useEffect(() => {
+
+    if (!symbol || symbols.length === 0) return;
 
     const nodeList: Node[] = [];
     const linkList: Link[] = [];
@@ -34,7 +44,6 @@ const SymbolGraph: React.FC<Props> = ({ symbol }) => {
       group: 1
     });
 
-    // símbolos directamente relacionados
     const direct = symbols.filter((s: any) =>
       symbol.related &&
       symbol.related.includes(s.symbol)
@@ -54,7 +63,6 @@ const SymbolGraph: React.FC<Props> = ({ symbol }) => {
 
     });
 
-    // símbolos por categoría
     const categoryMatches = symbols.filter((s: any) =>
       s.category === symbol.category && s.symbol !== center
     );
@@ -76,7 +84,7 @@ const SymbolGraph: React.FC<Props> = ({ symbol }) => {
     setNodes(nodeList);
     setLinks(linkList);
 
-  }, [symbol]);
+  }, [symbol, symbols]);
 
   return (
 
