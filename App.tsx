@@ -1,23 +1,25 @@
-import { useState } from "react";
+import React from "react";
 import SymbolSearch from "./components/SymbolSearch";
-import SymbolGraph from "./components/SymbolGraph";
+import SymbolGraph from "./SymbolGraph";
 
 function App() {
-
-  const [symbol, setSymbol] = useState(null);
-
   return (
     <div style={{ padding: 20 }}>
+      
+      <h1>Atlas Simbólico Cultural</h1>
 
-      <h1>Atlas Simbólico</h1>
+      <p>
+        Exploración simbólica inspirada en Jung, Campbell y la tradición
+        de los diccionarios simbólicos clásicos.
+      </p>
 
-      <SymbolSearch onSymbolSelect={setSymbol} />
+      <SymbolSearch />
 
       <hr style={{ margin: "40px 0" }} />
 
       <h2>Mapa simbólico</h2>
 
-      {symbol && <SymbolGraph symbol={symbol} />}
+      <SymbolGraph />
 
     </div>
   );
