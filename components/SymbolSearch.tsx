@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
-import { symbolDictionaryService } from "../services/symbolDictionaryService";
-import { PersonalWord, SymbolicCategory } from "../types";
-import { motion, AnimatePresence } from "framer-motion";
-import { Search } from "lucide-react";
+import React, { useState, useEffect } from 'react';
+import { symbolDictionaryService } from '../services/symbolDictionaryService';
+import { PersonalWord, SymbolicCategory } from '../types';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Search } from 'lucide-react';
 
 const m = motion as any;
 
 interface SymbolSearchProps {
-  onClose?: () => void;
-  onAddWord?: (word: PersonalWord) => void;
+  onClose: () => void;
+  onAddWord: (word: PersonalWord) => void;
 }
 
 const SymbolSearch: React.FC<SymbolSearchProps> = ({
@@ -16,14 +16,16 @@ const SymbolSearch: React.FC<SymbolSearchProps> = ({
   onAddWord
 }) => {
 
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState('');
   const [result, setResult] = useState<any | null>(null);
-  const [suggestions, setSuggestions] = useState<any[]>([]);
-  const [symbols, setSymbols] = useState<any[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [personalMeaning, setPersonalMeaning] = useState("");
 
+  const [symbols, setSymbols] = useState<any[]>([]);
+  const [suggestions, setSuggestions] = useState<any[]>([]);
+
   useEffect(() => {
+
     symbolDictionaryService.initializeIfEmpty();
 
     fetch("/data/classicalSymbols.json")
@@ -41,15 +43,16 @@ const SymbolSearch: React.FC<SymbolSearchProps> = ({
 
     const q = query.toLowerCase();
 
-    const matches = symbols.filter((s: any) =>
+    const matches = symbols.filter((s:any) =>
       s.symbol.toLowerCase().startsWith(q)
     );
 
-    setSuggestions(matches.slice(0, 6));
+    setSuggestions(matches.slice(0,6));
 
   }, [query, symbols]);
 
   const handleSearch = async (e: React.FormEvent) => {
+
     e.preventDefault();
 
     if (!query.trim()) return;
@@ -63,7 +66,7 @@ const SymbolSearch: React.FC<SymbolSearchProps> = ({
     setIsLoading(false);
   };
 
-  const selectSuggestion = (symbol: string) => {
+  const selectSuggestion = (symbol:string) => {
 
     setQuery(symbol);
 
@@ -75,149 +78,154 @@ const SymbolSearch: React.FC<SymbolSearchProps> = ({
   };
 
   return (
-    <div style={{ maxWidth: 700, margin: "auto" }}>
 
-      <h3 style={{ textAlign: "center", marginBottom: 20 }}>
-        Atlas Simbólico Cultural y Pedagógico
-      </h3>
+    <div className="fixed inset-0 z-[600] flex items-center justify-center px-6">
 
-      <form onSubmit={handleSearch} style={{ position: "relative" }}>
+      <div
+        className="absolute inset-0 bg-black/60"
+        onClick={onClose}
+      ></div>
 
-        <input
-          type="text"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Explora un símbolo..."
-          style={{
-            width: "100%",
-            padding: "12px 20px",
-            borderRadius: 30,
-            border: "1px solid #ccc"
-          }}
-        />
+      <m.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="relative bg-white rounded-2xl w-full max-w-2xl p-10 shadow-2xl overflow-y-auto max-h-[90vh]"
+      >
 
         <button
-          type="submit"
-          style={{
-            position: "absolute",
-            right: 10,
-            top: 6,
-            border: "none",
-            background: "transparent",
-            cursor: "pointer"
-          }}
+          onClick={onClose}
+          className="absolute top-4 right-4"
         >
-          <Search size={18} />
+          ✕
         </button>
 
-      </form>
+        <h3 className="text-xl italic text-center mb-6">
+          Atlas Simbólico Cultural y Pedagógico
+        </h3>
 
-      {suggestions.length > 0 && (
+        <form onSubmit={handleSearch} className="mb-4">
 
-        <div
-          style={{
-            border: "1px solid #eee",
-            borderRadius: 10,
-            marginTop: 10,
-            padding: 10,
-            background: "#fff"
-          }}
-        >
+          <div className="relative">
 
-          {suggestions.map((s, i) => (
+            <input
+              type="text"
+              value={query}
+              onChange={(e)=>setQuery(e.target.value)}
+              placeholder="Explora un símbolo..."
+              className="w-full border rounded-full px-6 py-3"
+            />
 
-            <div
-              key={i}
-              onClick={() => selectSuggestion(s.symbol)}
-              style={{
-                padding: "8px 10px",
-                cursor: "pointer"
-              }}
+            <button
+              type="submit"
+              className="absolute right-4 top-1/2 -translate-y-1/2"
             >
-              {s.symbol}
-            </div>
+              <Search size={18}/>
+            </button>
 
-          ))}
+          </div>
 
-        </div>
+        </form>
 
-      )}
+        {suggestions.length > 0 && (
 
-      <AnimatePresence>
+          <div className="border rounded-xl mb-6">
 
-        {result && (
+            {suggestions.map((s,i)=>(
 
-          <m.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            style={{ marginTop: 30 }}
-          >
+              <div
+                key={i}
+                onClick={()=>selectSuggestion(s.symbol)}
+                className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+              >
+                {s.symbol}
+              </div>
 
-            <h4>Perspectiva cultural</h4>
-            <p>{result.mainDefinition}</p>
+            ))}
 
-            <h4>Capa arquetípica</h4>
-            <p>{result.archetypalLayer}</p>
+          </div>
 
-            <h4>Dimensión transformativa</h4>
-            <p>{result.transformativeDimension}</p>
+        )}
 
-            <div style={{ marginTop: 20 }}>
-              <h4>Tu significado personal</h4>
+        <AnimatePresence>
 
-              <textarea
-                value={personalMeaning}
-                onChange={(e) => setPersonalMeaning(e.target.value)}
-                placeholder="¿Qué representa este símbolo en tu momento actual?"
-                style={{
-                  width: "100%",
-                  padding: 10,
-                  borderRadius: 8,
-                  border: "1px solid #ccc"
-                }}
-              />
-            </div>
+          {result && (
 
-            {onAddWord && (
+            <m.div
+              initial={{ opacity:0 }}
+              animate={{ opacity:1 }}
+              className="space-y-6"
+            >
+
+              <div>
+                <h4 className="font-semibold">Perspectiva cultural</h4>
+                <p className="italic">{result.mainDefinition}</p>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">Capa arquetípica</h4>
+                <p className="italic">{result.archetypalLayer}</p>
+              </div>
+
+              <div>
+                <h4 className="font-semibold">Dimensión transformativa</h4>
+                <p className="italic">{result.transformativeDimension}</p>
+              </div>
+
+              {result.emotionalAlert && (
+                <div className="bg-yellow-100 p-4 rounded-xl text-sm">
+                  Este símbolo puede estar vinculado a momentos sensibles.
+                  ¿Deseas hablar con alguien de confianza o buscar acompañamiento profesional?
+                </div>
+              )}
+
+              <div>
+                <h4 className="font-semibold">Tu significado personal</h4>
+
+                <textarea
+                  value={personalMeaning}
+                  onChange={(e)=>setPersonalMeaning(e.target.value)}
+                  placeholder="¿Qué representa este símbolo en tu momento actual?"
+                  className="w-full border rounded-xl p-4 mt-2"
+                />
+              </div>
+
               <button
-                onClick={() => {
+                onClick={()=>{
 
                   onAddWord({
+
                     id: Date.now().toString(),
                     word: result.symbol,
                     meaning: result.mainDefinition,
                     definicionPersonal: personalMeaning,
                     definicionAcademica: result.mainDefinition,
                     category: result.category as SymbolicCategory,
-                    origin: "personal",
+                    origin:'personal',
                     resonanciaEmocional: result.emotionalResonance,
-                    createdAt: new Date().toISOString()
+                    createdAt:new Date().toISOString()
+
                   });
 
-                  if (onClose) onClose();
+                  onClose();
 
                 }}
-                style={{
-                  marginTop: 20,
-                  padding: 10,
-                  width: "100%",
-                  background: "black",
-                  color: "white",
-                  borderRadius: 20
-                }}
+                className="w-full py-3 bg-black text-white rounded-full"
               >
                 Guardar en mi diccionario
               </button>
-            )}
 
-          </m.div>
+            </m.div>
 
-        )}
+          )}
 
-      </AnimatePresence>
+        </AnimatePresence>
+
+      </m.div>
 
     </div>
+
   );
+
 };
 
 export default SymbolSearch;
