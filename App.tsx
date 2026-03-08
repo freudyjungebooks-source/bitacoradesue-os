@@ -1,28 +1,68 @@
-import React from "react";
-import SymbolSearch from "./components/SymbolSearch";
+import React, { useState } from "react";
+
+import Welcome from "./components/Welcome";
+import DiccionarioSimbolosScreen from "./components/DiccionarioSimbolosScreen";
+import DreamForm from "./components/DreamForm";
+import DreamList from "./components/DreamList";
+import PersonalDictionary from "./components/PersonalDictionary";
 import SymbolGraph from "./SymbolGraph";
 
 function App() {
+
+  const [screen, setScreen] = useState("inicio");
+
   return (
-    <div style={{ padding: 20 }}>
-      
-      <h1>Atlas Simbólico Cultural</h1>
 
-      <p>
-        Exploración simbólica inspirada en Jung, Campbell y la tradición
-        de los diccionarios simbólicos clásicos.
-      </p>
+    <div>
 
-      <SymbolSearch />
+      <nav style={{
+        display: "flex",
+        gap: "20px",
+        padding: "20px",
+        borderBottom: "1px solid #eee"
+      }}>
 
-      <hr style={{ margin: "40px 0" }} />
+        <button onClick={()=>setScreen("inicio")}>
+          Inicio
+        </button>
 
-      <h2>Mapa simbólico</h2>
+        <button onClick={()=>setScreen("diccionario")}>
+          Diccionario simbólico
+        </button>
 
-      <SymbolGraph />
+        <button onClick={()=>setScreen("suenos")}>
+          Bitácora de sueños
+        </button>
+
+        <button onClick={()=>setScreen("personal")}>
+          Diccionario personal
+        </button>
+
+        <button onClick={()=>setScreen("mapa")}>
+          Mapa simbólico
+        </button>
+
+      </nav>
+
+      {screen === "inicio" && <Welcome />}
+
+      {screen === "diccionario" && <DiccionarioSimbolosScreen />}
+
+      {screen === "suenos" && (
+        <>
+          <DreamForm />
+          <DreamList />
+        </>
+      )}
+
+      {screen === "personal" && <PersonalDictionary />}
+
+      {screen === "mapa" && <SymbolGraph />}
 
     </div>
+
   );
+
 }
 
 export default App;
