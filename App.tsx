@@ -13,14 +13,17 @@ function App() {
 
   return (
 
-    <div>
+    <div style={{fontFamily:"serif"}}>
 
-      <nav style={{
-        display: "flex",
-        gap: "20px",
-        padding: "20px",
-        borderBottom: "1px solid #eee"
-      }}>
+      <nav
+        style={{
+          display:"flex",
+          gap:"16px",
+          padding:"18px",
+          borderBottom:"1px solid #eaeaea",
+          flexWrap:"wrap"
+        }}
+      >
 
         <button onClick={()=>setScreen("inicio")}>
           Inicio
@@ -44,20 +47,24 @@ function App() {
 
       </nav>
 
-      {screen === "inicio" && <Welcome />}
+      <div style={{padding:"30px"}}>
 
-      {screen === "diccionario" && <DiccionarioSimbolosScreen />}
+        {screen === "inicio" && <Welcome />}
 
-      {screen === "suenos" && (
-        <>
-          <DreamForm />
-          <DreamList />
-        </>
-      )}
+        {screen === "diccionario" && <DiccionarioSimbolosScreen />}
 
-      {screen === "personal" && <PersonalDictionary />}
+        {screen === "suenos" && (
+          <>
+            <DreamForm />
+            <DreamList />
+          </>
+        )}
 
-      {screen === "mapa" && <SymbolGraph />}
+        {screen === "personal" && <PersonalDictionary />}
+
+        {screen === "mapa" && <SymbolGraph />}
+
+      </div>
 
     </div>
 
