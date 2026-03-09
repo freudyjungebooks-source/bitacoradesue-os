@@ -5,7 +5,14 @@ import DiccionarioSimbolosScreen from "./components/DiccionarioSimbolosScreen";
 import DreamForm from "./components/DreamForm";
 import DreamList from "./components/DreamList";
 import PersonalDictionary from "./components/PersonalDictionary";
+
 import SymbolGraph from "./SymbolGraph";
+
+// módulos pedagógicos
+import PedagogicalDocument from "./components/PedagogicalDocument";
+import PedagogicalReference from "./components/PedagogicalReference";
+import WorkshopList from "./components/WorkshopList";
+import WritingRefinement from "./components/WritingRefinement";
 
 function App() {
 
@@ -13,18 +20,15 @@ function App() {
 
   return (
 
-    <div style={{fontFamily:"serif", minHeight:"100vh", background:"#fafafa"}}>
+    <div style={{fontFamily:"serif"}}>
 
-      {/* MENÚ PRINCIPAL */}
       <nav
         style={{
           display:"flex",
-          gap:"18px",
-          padding:"20px",
+          gap:"14px",
+          padding:"18px",
           borderBottom:"1px solid #eaeaea",
-          flexWrap:"wrap",
-          justifyContent:"center",
-          background:"white"
+          flexWrap:"wrap"
         }}
       >
 
@@ -32,12 +36,44 @@ function App() {
           inicio
         </button>
 
-        <button onClick={()=>setScreen("diccionario")}>
-          diccionario simbólico
+        <button onClick={()=>setScreen("bitacora")}>
+          bitácora
         </button>
 
-        <button onClick={()=>setScreen("suenos")}>
-          bitácora de sueños
+        <button onClick={()=>setScreen("simbolos")}>
+          símbolos
+        </button>
+
+        <button onClick={()=>setScreen("circulos")}>
+          círculos
+        </button>
+
+        <button onClick={()=>setScreen("talleres")}>
+          talleres
+        </button>
+
+        <button onClick={()=>setScreen("memoria")}>
+          memoria
+        </button>
+
+        <button onClick={()=>setScreen("curriculo")}>
+          currículo
+        </button>
+
+        <button onClick={()=>setScreen("cuidado")}>
+          cuidado
+        </button>
+
+        <button onClick={()=>setScreen("proposito")}>
+          propósito
+        </button>
+
+        <button onClick={()=>setScreen("referente")}>
+          referente
+        </button>
+
+        <button onClick={()=>setScreen("diccionario")}>
+          diccionario simbólico
         </button>
 
         <button onClick={()=>setScreen("personal")}>
@@ -45,25 +81,39 @@ function App() {
         </button>
 
         <button onClick={()=>setScreen("mapa")}>
-          atlas simbólico
+          mapa simbólico
         </button>
 
       </nav>
 
-      {/* CONTENIDO PRINCIPAL */}
-
-      <div style={{padding:"40px"}}>
+      <div style={{padding:"30px"}}>
 
         {screen === "inicio" && <Welcome />}
 
-        {screen === "diccionario" && <DiccionarioSimbolosScreen />}
-
-        {screen === "suenos" && (
+        {screen === "bitacora" && (
           <>
             <DreamForm />
             <DreamList />
           </>
         )}
+
+        {screen === "simbolos" && <DiccionarioSimbolosScreen />}
+
+        {screen === "circulos" && <WritingRefinement />}
+
+        {screen === "talleres" && <WorkshopList />}
+
+        {screen === "memoria" && <PedagogicalDocument />}
+
+        {screen === "curriculo" && <PedagogicalReference />}
+
+        {screen === "cuidado" && <PersonalDictionary />}
+
+        {screen === "proposito" && <PersonalDictionary />}
+
+        {screen === "referente" && <PersonalDictionary />}
+
+        {screen === "diccionario" && <DiccionarioSimbolosScreen />}
 
         {screen === "personal" && <PersonalDictionary />}
 
