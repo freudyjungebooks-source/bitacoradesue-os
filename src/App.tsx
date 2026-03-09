@@ -5,14 +5,7 @@ import DiccionarioSimbolosScreen from "./components/DiccionarioSimbolosScreen";
 import DreamForm from "./components/DreamForm";
 import DreamList from "./components/DreamList";
 import PersonalDictionary from "./components/PersonalDictionary";
-
 import SymbolGraph from "./SymbolGraph";
-
-// módulos pedagógicos
-import PedagogicalDocument from "./components/PedagogicalDocument";
-import PedagogicalReference from "./components/PedagogicalReference";
-import WorkshopList from "./components/WorkshopList";
-import WritingRefinement from "./components/WritingRefinement";
 
 function App() {
 
@@ -25,7 +18,7 @@ function App() {
       <nav
         style={{
           display:"flex",
-          gap:"14px",
+          gap:"16px",
           padding:"18px",
           borderBottom:"1px solid #eaeaea",
           flexWrap:"wrap"
@@ -99,19 +92,54 @@ function App() {
 
         {screen === "simbolos" && <DiccionarioSimbolosScreen />}
 
-        {screen === "circulos" && <WritingRefinement />}
+        {screen === "circulos" && (
+          <div>
+            <h2>Círculos de escritura</h2>
+            <p>Espacio para el diálogo simbólico y la escritura colectiva.</p>
+          </div>
+        )}
 
-        {screen === "talleres" && <WorkshopList />}
+        {screen === "talleres" && (
+          <div>
+            <h2>Talleres</h2>
+            <p>Actividades pedagógicas para fortalecer la escritura y la interpretación simbólica.</p>
+          </div>
+        )}
 
-        {screen === "memoria" && <PedagogicalDocument />}
+        {screen === "memoria" && (
+          <div>
+            <h2>Memoria</h2>
+            <p>Archivo de experiencias narrativas y memoria simbólica.</p>
+          </div>
+        )}
 
-        {screen === "curriculo" && <PedagogicalReference />}
+        {screen === "curriculo" && (
+          <div>
+            <h2>Currículo</h2>
+            <p>Integración pedagógica con los lineamientos educativos.</p>
+          </div>
+        )}
 
-        {screen === "cuidado" && <PersonalDictionary />}
+        {screen === "cuidado" && (
+          <div>
+            <h2>Cuidado</h2>
+            <p>Espacio para la reflexión emocional y el autocuidado narrativo.</p>
+          </div>
+        )}
 
-        {screen === "proposito" && <PersonalDictionary />}
+        {screen === "proposito" && (
+          <div>
+            <h2>Propósito</h2>
+            <p>Construcción del proyecto de vida a través de la palabra.</p>
+          </div>
+        )}
 
-        {screen === "referente" && <PersonalDictionary />}
+        {screen === "referente" && (
+          <div>
+            <h2>Referente</h2>
+            <p>Marco simbólico: Freud, Jung, Popol Vuh, pensamiento maya, arquetipos universales.</p>
+          </div>
+        )}
 
         {screen === "diccionario" && <DiccionarioSimbolosScreen />}
 
