@@ -1,23 +1,15 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
 
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-// Fix: Changed BrowserRouter to HashRouter to resolve "no exported member" error.
-import { HashRouter } from 'react-router-dom';
-import App from './App';
-import ErrorBoundary from './components/ErrorBoundary';
+const rootElement = document.getElementById("root");
 
-const rootElement = document.getElementById('root');
-if (!rootElement) {
-  throw new Error("Could not find root element to mount to");
+if (rootElement) {
+  const root = ReactDOM.createRoot(rootElement);
+
+  root.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
 }
-
-const root = ReactDOM.createRoot(rootElement);
-root.render(
-  <React.StrictMode>
-    <HashRouter>
-      <ErrorBoundary>
-        <App />
-      </ErrorBoundary>
-    </HashRouter>
-  </React.StrictMode>
-);
