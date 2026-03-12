@@ -1,151 +1,99 @@
 import React, { useState } from "react";
 
+import Header from "./components/Header";
 import Welcome from "./components/Welcome";
-import DiccionarioSimbolosScreen from "./components/DiccionarioSimbolosScreen";
+
 import DreamForm from "./components/DreamForm";
 import DreamList from "./components/DreamList";
+
+import DiccionarioSimbolosScreen from "./components/DiccionarioSimbolosScreen";
 import PersonalDictionary from "./components/PersonalDictionary";
+
+import WordCircle from "./components/WordCircle";
+import WorkshopList from "./components/WorkshopList";
+
+import PedagogicalDocument from "./components/PedagogicalDocument";
+import Purpose from "./components/Purpose";
+import PedagogicalReference from "./components/PedagogicalReference";
+
 import SymbolGraph from "./SymbolGraph";
+
+import { AppView } from "./types";
 
 function App() {
 
-  const [screen, setScreen] = useState("inicio");
+  const [currentView, setCurrentView] = useState<AppView>("bitacora");
+  const [showForm, setShowForm] = useState(false);
+
+  const openForm = () => {
+    setShowForm(true);
+  };
+
+  const closeForm = () => {
+    setShowForm(false);
+  };
 
   return (
 
-    <div style={{fontFamily:"serif"}}>
+    <div className="min-h-screen">
 
-      <nav
-        style={{
-          display:"flex",
-          gap:"16px",
-          padding:"18px",
-          borderBottom:"1px solid #eaeaea",
-          flexWrap:"wrap"
-        }}
-      >
+      <Header
+        onOpenForm={openForm}
+        currentView={currentView}
+        onToggleView={setCurrentView}
+      />
 
-        <button onClick={()=>setScreen("inicio")}>
-          inicio
-        </button>
+      <div style={{ padding: "30px", maxWidth: "1100px", margin: "0 auto" }}>
 
-        <button onClick={()=>setScreen("bitacora")}>
-          bitácora
-        </button>
-
-        <button onClick={()=>setScreen("simbolos")}>
-          símbolos
-        </button>
-
-        <button onClick={()=>setScreen("circulos")}>
-          círculos
-        </button>
-
-        <button onClick={()=>setScreen("talleres")}>
-          talleres
-        </button>
-
-        <button onClick={()=>setScreen("memoria")}>
-          memoria
-        </button>
-
-        <button onClick={()=>setScreen("curriculo")}>
-          currículo
-        </button>
-
-        <button onClick={()=>setScreen("cuidado")}>
-          cuidado
-        </button>
-
-        <button onClick={()=>setScreen("proposito")}>
-          propósito
-        </button>
-
-        <button onClick={()=>setScreen("referente")}>
-          referente
-        </button>
-
-        <button onClick={()=>setScreen("diccionario")}>
-          diccionario simbólico
-        </button>
-
-        <button onClick={()=>setScreen("personal")}>
-          diccionario personal
-        </button>
-
-        <button onClick={()=>setScreen("mapa")}>
-          mapa simbólico
-        </button>
-
-      </nav>
-
-      <div style={{padding:"30px"}}>
-
-        {screen === "inicio" && <Welcome />}
-
-        {screen === "bitacora" && (
+        {currentView === "bitacora" && (
           <>
-            <DreamForm />
+            <Welcome />
+
+            {showForm && (
+              <DreamForm onClose={closeForm}/>
+            )}
+
             <DreamList />
           </>
         )}
 
-        {screen === "simbolos" && <DiccionarioSimbolosScreen />}
+        {currentView === "diccionario" && (
+          <>
+            <DiccionarioSimbolosScreen />
+            <SymbolGraph symbol={{symbol:"Agua", category:"Elemento", related:["flujo","emocion"]}} />
+          </>
+        )}
 
-        {screen === "circulos" && (
+        {currentView === "circulos" && (
+          <WordCircle />
+        )}
+
+        {currentView === "talleres" && (
+          <WorkshopList />
+        )}
+
+        {currentView === "memoria" && (
+          <PersonalDictionary />
+        )}
+
+        {currentView === "integracion" && (
+          <PedagogicalDocument />
+        )}
+
+        {currentView === "soporte" && (
           <div>
-            <h2>Círculos de escritura</h2>
-            <p>Espacio para el diálogo simbólico y la escritura colectiva.</p>
+            <h2>Cuidado emocional</h2>
+            <p>Espacio de acompañamiento respetuoso de la experiencia narrativa.</p>
           </div>
         )}
 
-        {screen === "talleres" && (
-          <div>
-            <h2>Talleres</h2>
-            <p>Actividades pedagógicas para fortalecer la escritura y la interpretación simbólica.</p>
-          </div>
+        {currentView === "purpose" && (
+          <Purpose />
         )}
 
-        {screen === "memoria" && (
-          <div>
-            <h2>Memoria</h2>
-            <p>Archivo de experiencias narrativas y memoria simbólica.</p>
-          </div>
+        {currentView === "institucional" && (
+          <PedagogicalReference />
         )}
-
-        {screen === "curriculo" && (
-          <div>
-            <h2>Currículo</h2>
-            <p>Integración pedagógica con los lineamientos educativos.</p>
-          </div>
-        )}
-
-        {screen === "cuidado" && (
-          <div>
-            <h2>Cuidado</h2>
-            <p>Espacio para la reflexión emocional y el autocuidado narrativo.</p>
-          </div>
-        )}
-
-        {screen === "proposito" && (
-          <div>
-            <h2>Propósito</h2>
-            <p>Construcción del proyecto de vida a través de la palabra.</p>
-          </div>
-        )}
-
-        {screen === "referente" && (
-          <div>
-            <h2>Referente</h2>
-            <p>Marco simbólico: Freud, Jung, Popol Vuh, pensamiento maya, arquetipos universales.</p>
-          </div>
-        )}
-
-        {screen === "diccionario" && <DiccionarioSimbolosScreen />}
-
-        {screen === "personal" && <PersonalDictionary />}
-
-        {screen === "mapa" && <SymbolGraph />}
 
       </div>
 
