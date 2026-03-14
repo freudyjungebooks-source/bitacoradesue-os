@@ -25,17 +25,12 @@ function App() {
   const [currentView, setCurrentView] = useState<AppView>("bitacora");
   const [showForm, setShowForm] = useState(false);
 
-  const openForm = () => {
-    setShowForm(true);
-  };
-
-  const closeForm = () => {
-    setShowForm(false);
-  };
+  const openForm = () => setShowForm(true);
+  const closeForm = () => setShowForm(false);
 
   return (
 
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-marfil-cosmico text-azul-noche">
 
       <Header
         onOpenForm={openForm}
@@ -43,14 +38,16 @@ function App() {
         onToggleView={setCurrentView}
       />
 
-      <div style={{ padding: "30px", maxWidth: "1100px", margin: "0 auto" }}>
+      <main className="max-w-4xl mx-auto px-6 pb-16">
 
         {currentView === "bitacora" && (
           <>
             <Welcome />
 
             {showForm && (
-              <DreamForm onClose={closeForm}/>
+              <div className="mb-8">
+                <DreamForm onClose={closeForm}/>
+              </div>
             )}
 
             <DreamList />
@@ -58,10 +55,10 @@ function App() {
         )}
 
         {currentView === "diccionario" && (
-          <>
+          <div className="space-y-10">
             <DiccionarioSimbolosScreen />
             <SymbolGraph symbol={{symbol:"Agua", category:"Elemento", related:["flujo","emocion"]}} />
-          </>
+          </div>
         )}
 
         {currentView === "circulos" && (
@@ -81,10 +78,14 @@ function App() {
         )}
 
         {currentView === "soporte" && (
-          <div>
-            <h2>Cuidado emocional</h2>
-            <p>Espacio de acompañamiento respetuoso de la experiencia narrativa.</p>
-          </div>
+          <section className="text-center py-10">
+            <h2 className="text-xl serif-font italic mb-4">
+              Cuidado emocional
+            </h2>
+            <p className="text-sm text-azul-noche/60">
+              Espacio para reflexionar sobre la experiencia emocional que surge en la escritura.
+            </p>
+          </section>
         )}
 
         {currentView === "purpose" && (
@@ -95,10 +96,9 @@ function App() {
           <PedagogicalReference />
         )}
 
-      </div>
+      </main>
 
     </div>
-
   );
 
 }
